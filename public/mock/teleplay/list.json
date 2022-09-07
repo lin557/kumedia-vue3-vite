@@ -1,0 +1,39 @@
+{
+  "code": "00000",
+  "msg": "ok",
+  "result": {
+    "total": 3,
+    "rows": [
+      {
+        "id": 1,
+        "path": "/teleplay/1",
+        "title": "沉香如屑·沉香重华",
+        "sub": "杨紫 成毅 共赴绝美仙恋",
+        "status": "59集全",
+        "age": 2022,
+        "cover": "//192.168.0.250/media/tv/沉香如屑/cover.jpg",
+        "thumb": "//192.168.0.250/media/tv/沉香如屑/thumb.jpg"
+      },
+      {
+        "id": 2,
+        "path": "/teleplay/2",
+        "title": "苍兰诀",
+        "sub": "虞书欣 王鹤棣 徐海乔 郭晓婷",
+        "status": "36集全",
+        "age": 2022,
+        "cover": "//192.168.0.250/media/tv/苍兰诀/cover.jpg",
+        "thumb": "//192.168.0.250/media/tv/苍兰诀/thumb.jpg"
+      },
+      {
+        "id": 3,
+        "path": "/teleplay/3",
+        "title": "星汉灿烂·月升沧海",
+        "sub": "吴磊 赵露思 郭涛 曾黎",
+        "status": "56集全",
+        "age": 2022,
+        "cover": "//192.168.0.250/media/tv/星汉灿烂/cover.jpg",
+        "thumb": "//192.168.0.250/media/tv/星汉灿烂/thumb.jpg"
+      }
+    ]
+  }
+}

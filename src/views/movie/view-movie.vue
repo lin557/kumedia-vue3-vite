@@ -1,12 +1,7 @@
 <template>
   <div class="video-container common-container">
     <div class="video-playbox">
-      <vue3-player
-        ref="playerRef"
-        :poster="listJson.poster"
-        :options="playOptions"
-        :auto-rate="{ enabled: false }"
-      />
+      <vue-xplayer ref="playerRef" :poster="listJson.poster" />
       <div class="video-list">
         <div class="video-title">{{ listJson.title }}</div>
         <div class="video-sub">{{ listJson.performer }}</div>
@@ -34,8 +29,8 @@
 <script lang="ts" setup>
 import { onMounted, ref, reactive } from 'vue'
 import { useRoute } from 'vue-router'
-import { getTeleplayJson, MediaJson } from '~/api/media'
-import Vue3Player from '~/components/videojs/vue3-player.vue'
+import { getMovieJson, MediaJson } from '~/api/media'
+import VueXplayer from '~/components/vue-xplayer.vue'
 
 let _listJson: MediaJson = {
   title: '',
@@ -46,14 +41,6 @@ let _listJson: MediaJson = {
 let listJson = reactive(_listJson)
 let playInfo = reactive({
   title: '',
-})
-const playOptions = reactive({
-  autoplay: true,
-  controls: true,
-  controlBar: {
-    closeButton: false,
-  },
-  muted: true,
 })
 
 let activeIndex = ref('')
@@ -68,15 +55,14 @@ const getActiveClass = (index: number) => {
 }
 
 const getJson = async (id: string) => {
-  return await getTeleplayJson(id)
+  return await getMovieJson(id)
 }
 
-const playerRef = ref<InstanceType<typeof Vue3Player>>()
+const playerRef = ref<InstanceType<typeof VueXplayer>>()
 
 const play = (title: string, url: string) => {
   const opt = {
-    src: url,
-    isLive: false,
+    url: url,
   }
   activeIndex.value = title
   playInfo.title = listJson.title + ' (' + title + ')'
@@ -119,7 +105,7 @@ onMounted(() => {
 .video-container {
   padding-top: 15px;
 
-  .vvp-player {
+  .vue-xplayer {
     width: calc(100% - 336px);
     height: 100%;
     display: inline-block;
@@ -131,7 +117,7 @@ onMounted(() => {
     display: inline-block;
     box-sizing: border-box;
     vertical-align: top;
-    background-color: var(--ep-color-success-light-8);
+    background-color: var(--ep-color-success-light-9);
 
     .video-title {
       padding: 10px;

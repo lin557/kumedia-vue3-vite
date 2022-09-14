@@ -1,0 +1,77 @@
+{
+  "code": "00000",
+  "msg": "ok",
+  "result": {
+    "id": 154,
+    "title": "军行",
+    "audio": "//192.168.0.250/media/audio/唐诗三百首/154.mp3",
+    "node": "拼音参考书籍：《古代汉语常用字字典》 商务印书馆 2017年版",
+    "link": "https://www.cngwzj.com/pygushi/TangDai/13521/",
+    "rows": [
+      {  
+        "s": [
+          {
+            "pinyi": ["jūn", "xíng"],
+            "text": "军行",
+            "start1": 0,
+            "stop1": 999,
+            "start2": 0,
+            "stop2": 999
+          }
+        ]
+      },
+      {
+        "s": [
+          {
+            "pinyi": ["", "táng", "", "lǐ", "bái"],
+            "text": "[唐]李白",
+            "start1": 3.1,
+            "stop1": 17.2,
+            "start2": 3.1,
+            "stop2": 17.2
+          }
+        ]
+      },
+      {
+        "s": [
+          {
+            "pinyi": ["liú", "mǎ", "xīn", "kuà", "bái", "yù", "ān", ""],
+            "text": "骝马新跨白玉鞍，",
+            "start1": 3.1,
+            "stop1": 6.6,
+            "start2": 3.1,
+            "stop2": 10.1
+          },
+          {
+            "pinyi": ["zhàn", "bà", "shā", "cháng", "yuè", "sè", "hán", ""],
+            "text": "战罢沙场月色寒。",
+            "start1": 6.6,
+            "stop1": 10.1,
+            "start2": 3.1,
+            "stop2": 10.1
+          }
+        ]
+      },
+      {
+        "s": [
+          {
+            "pinyi": ["chéng", "tóu", "tiě", "gǔ", "shēng", "yóu", "zhèn", ""],
+            "text": "城头铁鼓声犹震，",
+            "start1": 10.1,
+            "stop1": 13.1,
+            "start2": 10.1,
+            "stop2": 17.1
+          },
+          {
+            "pinyi": ["xiá", "lǐ", "jīn", "dāo", "xuè", "wèi", "gān", ""],
+            "text": "匣里金刀血未干。",
+            "start1": 13.1,
+            "stop1": 17.2,
+            "start2": 10.1,
+            "stop2": 17.2
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "code": "00000",
+  "msg": "ok",
+  "result": {
+    "id": 151,
+    "title": "凉州词",
+    "audio": "//192.168.0.250/media/audio/唐诗三百首/152.mp3",
+    "node": "拼音参考书籍：《唐诗三百首》中华书局，《唐诗三百首》南京大学出版社，《古代汉语常用字字典》 商务印书馆 2017年版",
+    "link": "https://www.cngwzj.com/pygushi/TangDai/66493/",
+    "rows": [
+      {  
+        "s": [
+          {
+            "pinyi": ["liáng", "zhōu", "cí"],
+            "text": "凉州词",
+            "start1": 0,
+            "stop1": 999,
+            "start2": 0,
+            "stop2": 999
+          }
+        ]
+      },
+      {
+        "s": [
+          {
+            "pinyi": ["", "táng", "", "wáng", "zhī", "huàn"],
+            "text": "[唐]王之涣",
+            "start1": 4.3,
+            "stop1": 18.2,
+            "start2": 4.3,
+            "stop2": 18.2
+          }
+        ]
+      },
+      {
+        "s": [
+          {
+            "pinyi": ["huáng", "hé", "yuǎn", "shàng", "bái", "yún", "jiān", ""],
+            "text": "黄河远上白云间，",
+            "start1": 4.3,
+            "stop1": 7.5,
+            "start2": 4.3,
+            "stop2": 11.1
+          },
+          {
+            "pinyi": ["yí", "piàn", "gū", "chéng", "wàn", "rèn", "shān", ""],
+            "text": "一片孤城万仞山。",
+            "start1": 7.5,
+            "stop1": 11.1,
+            "start2": 4.3,
+            "stop2": 11.1
+          }
+        ]
+      },
+      {
+        "s": [
+          {
+            "pinyi": ["qiāng", "dí", "hé", "xū", "yuàn", "yáng", "liǔ", ""],
+            "text": "羌笛何须怨杨柳，",
+            "start1": 11.1,
+            "stop1": 14.4,
+            "start2": 11.1,
+            "stop2": 18.2
+          },
+          {
+            "pinyi": ["chūn", "fēng", "bú", "dù", "yù", "mén", "guān", ""],
+            "text": "春风不度玉门关。",
+            "start1": 14.4,
+            "stop1": 18.2,
+            "start2": 11.1,
+            "stop2": 18.2
+          }
+        ]
+      }
+    ]
+  }
+}

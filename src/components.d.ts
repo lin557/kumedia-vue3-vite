@@ -9,19 +9,20 @@ declare module '@vue/runtime-core' {
   export interface GlobalComponents {
     BaseBody: typeof import('./components/layouts/base-body.vue')['default']
     BaseHeader: typeof import('./components/layouts/base-header.vue')['default']
-    ElCard: typeof import('element-plus/es')['ElCard']
+    copy: typeof import('./components/videojs/vue3-player copy.vue')['default']
     ElConfigProvider: typeof import('element-plus/es')['ElConfigProvider']
     ElEmpty: typeof import('element-plus/es')['ElEmpty']
     ElHeader: typeof import('element-plus/es')['ElHeader']
     ElMenu: typeof import('element-plus/es')['ElMenu']
     ElMenuItem: typeof import('element-plus/es')['ElMenuItem']
-    ElRow: typeof import('element-plus/es')['ElRow']
     ElScrollbar: typeof import('element-plus/es')['ElScrollbar']
     KmLayout: typeof import('./components/layouts/km-layout.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     TangPlayer: typeof import('./components/tang-player.vue')['default']
     ThumbBox: typeof import('./components/thumb-box.vue')['default']
+    Vue3Player: typeof import('./components/videojs/vue3-player.vue')['default']
+    'Vue3Player copy': typeof import('./components/videojs/vue3-player copy.vue')['default']
     VueXplayer: typeof import('./components/vue-xplayer.vue')['default']
   }
   export interface ComponentCustomProperties {

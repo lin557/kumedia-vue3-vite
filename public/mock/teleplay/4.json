@@ -1,0 +1,172 @@
+{
+  "code": "00000",
+  "msg": "ok",
+  "result": {
+    "id": "4",
+    "title": "梦华录",
+    "performer": "刘亦菲 陈晓 柳岩 林允 徐海乔 代旭",
+    "poster": "//192.168.0.250/media/teleplay/梦华录/poster.webp",
+    "episodes": [
+      {
+        "title": "1",
+        "url": "//192.168.0.250/media/teleplay/梦华录/梦华录第01集.mp4"
+      },
+      {
+        "title": "2",
+        "url": "//192.168.0.250/media/teleplay/梦华录/梦华录第02集.mp4"
+      },
+      {
+        "title": "3",
+        "url": "//192.168.0.250/media/teleplay/梦华录/梦华录第03集.mp4"
+      },
+      {
+        "title": "4",
+        "url": "//192.168.0.250/media/teleplay/梦华录/梦华录第04集.mp4"
+      },
+      {
+        "title": "5",
+        "url": "//192.168.0.250/media/teleplay/梦华录/梦华录第05集.mp4"
+      },
+      {
+        "title": "6",
+        "url": "//192.168.0.250/media/teleplay/梦华录/梦华录第06集.mp4"
+      },
+      {
+        "title": "7",
+        "url": "//192.168.0.250/media/teleplay/梦华录/梦华录第07集.mp4"
+      },
+      {
+        "title": "8",
+        "url": "//192.168.0.250/media/teleplay/梦华录/梦华录第08集.mp4"
+      },
+      {
+        "title": "9",
+        "url": "//192.168.0.250/media/teleplay/梦华录/梦华录第09集.mp4"
+      },
+      {
+        "title": "10",
+        "url": "//192.168.0.250/media/teleplay/梦华录/梦华录第10集.mp4"
+      },
+      {
+        "title": "11",
+        "url": "//192.168.0.250/media/teleplay/梦华录/梦华录第11集.mp4"
+      },
+      {
+        "title": "12",
+        "url": "//192.168.0.250/media/teleplay/梦华录/梦华录第12集.mp4"
+      },
+      {
+        "title": "13",
+        "url": "//192.168.0.250/media/teleplay/梦华录/梦华录第13集.mp4"
+      },
+      {
+        "title": "14",
+        "url": "//192.168.0.250/media/teleplay/梦华录/梦华录第14集.mp4"
+      },
+      {
+        "title": "15",
+        "url": "//192.168.0.250/media/teleplay/梦华录/梦华录第15集.mp4"
+      },
+      {
+        "title": "16",
+        "url": "//192.168.0.250/media/teleplay/梦华录/梦华录第16集.mp4"
+      },
+      {
+        "title": "17",
+        "url": "//192.168.0.250/media/teleplay/梦华录/梦华录第17集.mp4"
+      },
+      {
+        "title": "18",
+        "url": "//192.168.0.250/media/teleplay/梦华录/梦华录第18集.mp4"
+      },
+      {
+        "title": "19",
+        "url": "//192.168.0.250/media/teleplay/梦华录/梦华录第19集.mp4"
+      },
+      {
+        "title": "20",
+        "url": "//192.168.0.250/media/teleplay/梦华录/梦华录第20集.mp4"
+      },
+      {
+        "title": "21",
+        "url": "//192.168.0.250/media/teleplay/梦华录/梦华录第21集.mp4"
+      },
+      {
+        "title": "22",
+        "url": "//192.168.0.250/media/teleplay/梦华录/梦华录第22集.mp4"
+      },
+      {
+        "title": "23",
+        "url": "//192.168.0.250/media/teleplay/梦华录/梦华录第23集.mp4"
+      },
+      {
+        "title": "24",
+        "url": "//192.168.0.250/media/teleplay/梦华录/梦华录第24集.mp4"
+      },
+      {
+        "title": "25",
+        "url": "//192.168.0.250/media/teleplay/梦华录/梦华录第25集.mp4"
+      },
+      {
+        "title": "26",
+        "url": "//192.168.0.250/media/teleplay/梦华录/梦华录第26集.mp4"
+      },
+      {
+        "title": "27",
+        "url": "//192.168.0.250/media/teleplay/梦华录/梦华录第27集.mp4"
+      },
+      {
+        "title": "28",
+        "url": "//192.168.0.250/media/teleplay/梦华录/梦华录第28集.mp4"
+      },
+      {
+        "title": "29",
+        "url": "//192.168.0.250/media/teleplay/梦华录/梦华录第29集.mp4"
+      },
+      {
+        "title": "30",
+        "url": "//192.168.0.250/media/teleplay/梦华录/梦华录第30集.mp4"
+      },
+      {
+        "title": "31",
+        "url": "//192.168.0.250/media/teleplay/梦华录/梦华录第31集.mp4"
+      },
+      {
+        "title": "32",
+        "url": "//192.168.0.250/media/teleplay/梦华录/梦华录第32集.mp4"
+      },
+      {
+        "title": "33",
+        "url": "//192.168.0.250/media/teleplay/梦华录/梦华录第33集.mp4"
+      },
+      {
+        "title": "34",
+        "url": "//192.168.0.250/media/teleplay/梦华录/梦华录第34集.mp4"
+      },
+      {
+        "title": "35",
+        "url": "//192.168.0.250/media/teleplay/梦华录/梦华录第35集.mp4"
+      },
+      {
+        "title": "36",
+        "url": "//192.168.0.250/media/teleplay/梦华录/梦华录第36集.mp4"
+      },
+      {
+        "title": "37",
+        "url": "//192.168.0.250/media/teleplay/梦华录/梦华录第37集.mp4"
+      },
+      {
+        "title": "38",
+        "url": "//192.168.0.250/media/teleplay/梦华录/梦华录第38集.mp4"
+      },
+      {
+        "title": "39",
+        "url": "//192.168.0.250/media/teleplay/梦华录/梦华录第39集.mp4"
+      },
+      {
+        "title": "40",
+        "url": "//192.168.0.250/media/teleplay/梦华录/梦华录第40集.mp4"
+      }
+    ]
+  }
+}

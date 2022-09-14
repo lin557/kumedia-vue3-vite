@@ -27,7 +27,8 @@ export interface MdeiaList {
 }
 
 const getList = (type: string) => {
-  return axios.get<MdeiaList>('mock/' + type + '/list.json')
+  const dt = new Date().getTime()
+  return axios.get<MdeiaList>('mock/' + type + '/list.json?t=' + dt)
 }
 
 export const getTeleplayList = () => {
@@ -37,9 +38,16 @@ export const getTeleplayList = () => {
 
 export const getTeleplayJson = (params: string) => {
   // 返回的数据格式可以和服务端约定
-  return axios.get<MediaJson>('mock/teleplay/' + params + '.json')
+  const dt = new Date().getTime()
+  return axios.get<MediaJson>('mock/teleplay/' + params + '.json?t=' + dt)
 }
 
 export const getMovieList = () => {
   return getList('movie')
+}
+
+export const getMovieJson = (params: string) => {
+  // 返回的数据格式可以和服务端约定
+  const dt = new Date().getTime()
+  return axios.get<MediaJson>('mock/movie/' + params + '.json?t=' + dt)
 }

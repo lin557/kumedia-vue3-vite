@@ -1,6 +1,9 @@
 <template>
-  <div class="teleplay-container common-container">
-    <el-empty v-if="listJson.rows.length === 0" description="无数据" />
+  <div v-loading="loading" class="teleplay-container common-container">
+    <el-empty
+      v-if="listJson.rows.length === 0 && loading == false"
+      description="无数据"
+    />
     <template v-for="item in listJson.rows" :key="item.id">
       <div class="g-col">
         <thumb-box :info="item" />
@@ -9,7 +12,7 @@
   </div>
 </template>
 <script lang="ts" setup>
-import { onMounted, reactive } from 'vue'
+import { onMounted, ref, reactive } from 'vue'
 import { getTeleplayList, MdeiaList } from '~/api/media'
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
@@ -23,18 +26,26 @@ let _listJson: MdeiaList = {
 }
 
 let listJson = reactive(_listJson)
+let loading = ref(false)
 
 const getJson = async () => {
   return await getTeleplayList()
 }
 
 onMounted(() => {
-  getJson().then((res) => {
-    listJson.total = res.result.total
-    listJson.rows.length = 0
-    listJson.rows.push(...res.result.rows)
-    // console.log(res.result)
-  })
+  loading.value = true
+  getJson()
+    .then((res) => {
+      listJson.total = res.result.total
+      listJson.rows.length = 0
+      listJson.rows.push(...res.result.rows)
+      // console.log(res.result)
+      loading.value = false
+    })
+    .catch((err) => {
+      console.log(err)
+      loading.value = false
+    })
 })
 </script>
 

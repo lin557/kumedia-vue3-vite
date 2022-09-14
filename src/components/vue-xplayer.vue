@@ -59,6 +59,7 @@ const createPlayer = (url: string, poster: string) => {
     playsinline: true,
     poster: poster,
     autoplay: autoplay,
+    closeVideoTouch: true,
   })
   // dp = new DPlayer({
   //   //初始化视频对象

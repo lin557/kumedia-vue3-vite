@@ -35,14 +35,14 @@ const routes: Array<RouteRecordRaw> = [
       },
       {
         path: 'tang',
-        component: () => import('~/views/tang-shi/list-ts.vue'),
+        component: () => import('~/views/tang/list-tang.vue'),
         meta: {
           title: '唐诗',
         },
       },
       {
         path: 'tang/:id',
-        component: () => import('~/views/tang-shi/view-ts.vue'),
+        component: () => import('~/views/tang/view-tang.vue'),
         meta: {
           title: '唐诗',
           parent: '/tang',
@@ -70,13 +70,14 @@ const routes: Array<RouteRecordRaw> = [
           title: '电影',
         },
       },
-      // {
-      //   path: 'movie/:id',
-      //   component: () => import('~/views/movie/view-tv.vue'),
-      //   meta: {
-      //     title: '电影',
-      //   },
-      // },
+      {
+        path: 'movie/:id',
+        component: () => import('~/views/movie/view-movie.vue'),
+        meta: {
+          title: '电影',
+          parent: '/movie',
+        },
+      },
     ],
   },
 ]

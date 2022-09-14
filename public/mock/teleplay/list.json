@@ -9,10 +9,10 @@
         "path": "/teleplay/1",
         "title": "沉香如屑·沉香重华",
         "sub": "杨紫 成毅 共赴绝美仙恋",
-        "status": "59集全",
+        "status": "59集全+彩蛋",
         "age": 2022,
-        "cover": "//192.168.0.250/media/tv/沉香如屑/cover.jpg",
-        "thumb": "//192.168.0.250/media/tv/沉香如屑/thumb.jpg"
+        "cover": "//192.168.0.250/media/teleplay/沉香如屑/cover.jpg",
+        "thumb": "//192.168.0.250/media/teleplay/沉香如屑/thumb.jpg"
       },
       {
         "id": 2,
@@ -21,8 +21,8 @@
         "sub": "虞书欣 王鹤棣 徐海乔 郭晓婷",
         "status": "36集全",
         "age": 2022,
-        "cover": "//192.168.0.250/media/tv/苍兰诀/cover.jpg",
-        "thumb": "//192.168.0.250/media/tv/苍兰诀/thumb.jpg"
+        "cover": "//192.168.0.250/media/teleplay/苍兰诀/cover.jpg",
+        "thumb": "//192.168.0.250/media/teleplay/苍兰诀/thumb.jpg"
       },
       {
         "id": 3,
@@ -31,8 +31,28 @@
         "sub": "吴磊 赵露思 郭涛 曾黎",
         "status": "56集全",
         "age": 2022,
-        "cover": "//192.168.0.250/media/tv/星汉灿烂/cover.jpg",
-        "thumb": "//192.168.0.250/media/tv/星汉灿烂/thumb.jpg"
+        "cover": "//192.168.0.250/media/teleplay/星汉灿烂/cover.jpg",
+        "thumb": "//192.168.0.250/media/teleplay/星汉灿烂/thumb.jpg"
+      },
+      {
+        "id": 4,
+        "path": "/teleplay/4",
+        "title": "梦华录",
+        "sub": "刘亦菲 陈晓 柳岩 林允 徐海乔 代旭",
+        "status": "40集全",
+        "age": 2022,
+        "cover": "//192.168.0.250/media/teleplay/梦华录/cover.jpg",
+        "thumb": "//192.168.0.250/media/teleplay/梦华录/thumb.jpg"
+      },
+      {
+        "id": 5,
+        "path": "/teleplay/5",
+        "title": "玉面桃花总相逢",
+        "sub": "张含韵 佟梦实 陈奕龙 曾一萱 王若麟 盛蕙子 孔语浩 石洁茹",
+        "status": "36集全",
+        "age": 2022,
+        "cover": "//192.168.0.250/media/teleplay/玉面桃花总相逢/cover.jpg",
+        "thumb": "//192.168.0.250/media/teleplay/玉面桃花总相逢/thumb.jpg"
       }
     ]
   }

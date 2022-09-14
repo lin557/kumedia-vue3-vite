@@ -51,5 +51,6 @@ watch(
 .base-body {
   height: calc(100% - 60px);
   overflow-y: hidden;
+  background-color: var(--ep-color-success-light-9);
 }
 </style>

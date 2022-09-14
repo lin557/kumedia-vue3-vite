@@ -172,7 +172,7 @@ code {
   transition: all 0.2s cubic-bezier(1, 0.6, 0.6, 1);
 }
 
-@media screen and (max-width:969px) {
+@media screen and (max-width:735px) {
 	.navbar .navbar-wrapper .ep-menu--horizontal,
   .common-container,
   .base-body .km-breadcrumb {
@@ -187,7 +187,7 @@ code {
   .video-playbox {
     height: 260px;
     
-    .vue-xplayer {
+    .vvp-player {
       width: 100% !important;
     }
 
@@ -207,6 +207,42 @@ code {
       }
     }
   }
+
+  .tang-container {
+    .tang-item {
+      width: calc(100% - 20px);
+    }
+  }
+}
+
+@media screen and (max-width:969px) and (min-width:736px) {
+	.navbar .navbar-wrapper .ep-menu--horizontal,
+  .common-container,
+  .base-body .km-breadcrumb {
+	  width: 712px;
+  }
+
+  .g-col {
+    width: 175px;
+  }
+
+  .video-playbox {
+    height: 320px;
+
+    .vvp-player {
+      width: calc(100% - 282px) !important;
+    }
+
+    .video-list {
+      width: 282px !important;
+    }
+  }
+
+  .tang-container {
+    .tang-item {
+      width: 206px;
+    }
+  }
 }
 
 @media screen and (max-width:1239px) and (min-width:970px) {
@@ -222,6 +258,20 @@ code {
 
   .video-playbox {
     height: 460px;
+
+    .vvp-player {
+      width: calc(100% - 282px) !important;
+    }
+
+    .video-list {
+      width: 282px !important;
+    }
+  }
+
+  .tang-container {
+    .tang-item {
+      width: 214px;
+    }
   }
 }
 
@@ -239,6 +289,12 @@ code {
   .video-playbox {
     height: 560px;
   }
+
+  .tang-container {
+    .tang-item {
+      width: 203px;
+    }
+  }
 }
 
 @media screen and (max-width:1591px) and (min-width:1330px) {
@@ -254,6 +310,12 @@ code {
 
   .video-playbox {
     height: 600px;
+  }
+
+  .tang-container {
+    .tang-item {
+      width: 221px;
+    }
   }
 }
 
@@ -271,6 +333,12 @@ code {
   .video-playbox {
     height: 760px;
   }
+
+  .tang-container {
+    .tang-item {
+      width: 233px;
+    }
+  }
 }
 
 @media screen and (min-width:1790px) {
@@ -285,6 +353,12 @@ code {
   }
 
   .video-playbox {
-    height: 804px;
+    height: 803px;
+  }
+
+  .tang-container {
+    .tang-item {
+      width: 228px;
+    }
   }
 }

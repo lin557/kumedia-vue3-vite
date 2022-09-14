@@ -1,0 +1,74 @@
+{
+  "code": "00000",
+  "msg": "ok",
+  "result": {
+    "total": 0,
+    "rows": [
+      {
+        "author": "骆宾王",
+        "works": [
+          {
+            "title": "咏鹅",
+            "path": "/tang/1"
+          },
+          {
+            "title": "易水送别",
+            "path": "/tang/8"
+          }
+        ]
+      },
+      {
+        "author": "李白",
+        "works": [
+          {
+            "title": "访戴天山道士不遇",
+            "path": "/tang/153"
+          },
+          {
+            "title": "军行",
+            "path": "/tang/154"
+          }
+        ]
+      },
+      {
+        "author": "王之涣",
+        "works": [
+          {
+            "title": "登鹳雀楼",
+            "path": "/tang/9"
+          },
+          {
+            "title": "凉州词",
+            "path": "/tang/152"
+          }
+        ]
+      },
+      {
+        "author": "王维",
+        "works": [
+          {
+            "title": "少年行（其一）",
+            "path": "/tang/148"
+          },
+          {
+            "title": "少年行（其二）",
+            "path": "/tang/149"
+          },
+          {
+            "title": "九月九日忆山东兄弟",
+            "path": "/tang/150"
+          }
+        ]
+      },
+      {
+        "author": "王翰",
+        "works": [
+          {
+            "title": "凉州词",
+            "path": "/tang/151"
+          }
+        ]
+      }
+    ]
+  }
+}

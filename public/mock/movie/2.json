@@ -1,0 +1,16 @@
+{
+  "code": "00000",
+  "msg": "ok",
+  "result": {
+    "id": "2",
+    "title": "人生大事",
+    "performer": "朱一龙 杨恩又 王戈 刘陆 罗京民 吴倩 陈创 小爱 李春嫒",
+    "poster": "//192.168.0.250/media/movie/人生大事/poster.webp",
+    "episodes": [
+      {
+        "title": "国语",
+        "url": "//192.168.0.250/media/movie/人生大事/人生大事-2022_HD国语中字.mp4"
+      }
+    ]
+  }
+}

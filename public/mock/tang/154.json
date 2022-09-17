@@ -25,7 +25,7 @@
           {
             "pinyi": ["", "táng", "", "lǐ", "bái"],
             "text": "[唐]李白",
-            "start1": 3.1,
+            "start1": 0,
             "stop1": 17.2,
             "start2": 3.1,
             "stop2": 17.2
@@ -35,39 +35,39 @@
       {
         "s": [
           {
-            "pinyi": ["liú", "mǎ", "xīn", "kuà", "bái", "yù", "ān", ""],
-            "text": "骝马新跨白玉鞍，",
+            "pinyi": ["liú", "mǎ", "xīn", "kuà", "bái", "yù", "ān"],
+            "text": "骝马新跨白玉鞍",
             "start1": 3.1,
             "stop1": 6.6,
             "start2": 3.1,
-            "stop2": 10.1
+            "stop2": 10.0
           },
           {
-            "pinyi": ["zhàn", "bà", "shā", "cháng", "yuè", "sè", "hán", ""],
-            "text": "战罢沙场月色寒。",
+            "pinyi": ["zhàn", "bà", "shā", "cháng", "yuè", "sè", "hán"],
+            "text": "战罢沙场月色寒",
             "start1": 6.6,
-            "stop1": 10.1,
+            "stop1": 10.0,
             "start2": 3.1,
-            "stop2": 10.1
+            "stop2": 10.0
           }
         ]
       },
       {
         "s": [
           {
-            "pinyi": ["chéng", "tóu", "tiě", "gǔ", "shēng", "yóu", "zhèn", ""],
-            "text": "城头铁鼓声犹震，",
-            "start1": 10.1,
-            "stop1": 13.1,
-            "start2": 10.1,
+            "pinyi": ["chéng", "tóu", "tiě", "gǔ", "shēng", "yóu", "zhèn"],
+            "text": "城头铁鼓声犹震",
+            "start1": 10.0,
+            "stop1": 13.0,
+            "start2": 10.0,
             "stop2": 17.1
           },
           {
-            "pinyi": ["xiá", "lǐ", "jīn", "dāo", "xuè", "wèi", "gān", ""],
-            "text": "匣里金刀血未干。",
-            "start1": 13.1,
+            "pinyi": ["xiá", "lǐ", "jīn", "dāo", "xuè", "wèi", "gān"],
+            "text": "匣里金刀血未干",
+            "start1": 13.0,
             "stop1": 17.2,
-            "start2": 10.1,
+            "start2": 10.0,
             "stop2": 17.2
           }
         ]

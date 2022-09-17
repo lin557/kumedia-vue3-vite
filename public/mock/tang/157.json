@@ -25,7 +25,7 @@
           {
             "pinyi": ["", "táng", "", "zhāng", "jí"],
             "text": "[唐]张籍",
-            "start1": 4.9,
+            "start1": 0.5,
             "stop1": 19.3,
             "start2": 4.9,
             "stop2": 19.3
@@ -35,16 +35,16 @@
       {
         "s": [
           {
-            "pinyi": ["jǐn", "jiāng", "jìn", "xī", "yān", "shuǐ", "lǜ", ""],
-            "text": "锦江近西烟水绿，",
+            "pinyi": ["jǐn", "jiāng", "jìn", "xī", "yān", "shuǐ", "lǜ"],
+            "text": "锦江近西烟水绿",
             "start1": 4.9,
             "stop1": 8.6,
             "start2": 4.9,
             "stop2": 12.9
           },
           {
-            "pinyi": ["xīn", "yǔ", "shān", "tóu", "lì", "zhī", "shú", ""],
-            "text": "新雨山头荔枝熟。",
+            "pinyi": ["xīn", "yǔ", "shān", "tóu", "lì", "zhī", "shú"],
+            "text": "新雨山头荔枝熟",
             "start1": 8.6,
             "stop1": 12.3,
             "start2": 4.9,
@@ -55,17 +55,17 @@
       {
         "s": [
           {
-            "pinyi": ["wàn", "lǐ", "qiáo", "biān", "duō", "jiǔ", "jiā", ""],
-            "text": "万里桥边多酒家，",
+            "pinyi": ["wàn", "lǐ", "qiáo", "biān", "duō", "jiǔ", "jiā"],
+            "text": "万里桥边多酒家",
             "start1": 12.3,
-            "stop1": 15.4,
+            "stop1": 15.3,
             "start2": 12.3,
             "stop2": 19.3
           },
           {
-            "pinyi": ["yóu", "rén", "ài", "xiàng", "shuí", "jiā", "sù", ""],
-            "text": "游人爱向谁家宿。",
-            "start1": 15.4,
+            "pinyi": ["yóu", "rén", "ài", "xiàng", "shuí", "jiā", "sù"],
+            "text": "游人爱向谁家宿",
+            "start1": 15.3,
             "stop1": 19.3,
             "start2": 12.3,
             "stop2": 19.3

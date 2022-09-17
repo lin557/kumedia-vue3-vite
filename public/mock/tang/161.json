@@ -1,0 +1,77 @@
+{
+  "code": "00000",
+  "msg": "ok",
+  "result": {
+    "id": 161,
+    "title": "柏林寺南望",
+    "audio": "//192.168.0.250/media/audio/唐诗三百首/161.mp3",
+    "node": "拼音参考书籍：《古代汉语常用字字典》 商务印书馆 2017年版",
+    "link": "https://www.cngwzj.com/pygushi/TangDai/17114/",
+    "rows": [
+      {  
+        "s": [
+          {
+            "pinyi": ["bó", "lín", "sì", "nán", "wàng"],
+            "text": "柏林寺南望",
+            "start1": 1.0,
+            "stop1": 999,
+            "start2": 1.0,
+            "stop2": 999
+          }
+        ]
+      },
+      {
+        "s": [
+          {
+            "pinyi": ["", "táng", "", "láng", "shì", "yuán"],
+            "text": "[唐]郎士元",
+            "start1": 1.0,
+            "stop1": 20.5,
+            "start2": 5.7,
+            "stop2": 20.5
+          }
+        ]
+      },
+      {
+        "s": [
+          {
+            "pinyi": ["xī", "shàng", "yáo", "wén", "jīng", "shè", "zhōng"],
+            "text": "溪上遥闻精舍钟",
+            "start1": 5.7,
+            "stop1": 9.4,
+            "start2": 5.7,
+            "stop2": 13.0
+          },
+          {
+            "pinyi": ["bó", "zhōu", "wēi", "jìng", "dù", "shēn", "sōng"],
+            "text": "泊舟微径度深松",
+            "start1": 9.4,
+            "stop1": 13.0,
+            "start2": 5.7,
+            "stop2": 13.0
+          }
+        ]
+      },
+      {
+        "s": [
+          {
+            "pinyi": ["qīng", "shān", "jì", "hòu", "yún", "yóu", "zài"],
+            "text": "青山霁后云犹在",
+            "start1": 13.0,
+            "stop1": 16.5,
+            "start2": 13.0,
+            "stop2": 20.5
+          },
+          {
+            "pinyi": ["huà", "chū", "dōng", "nán", "sì", "wǔ", "fēng"],
+            "text": "画出东南四五峰",
+            "start1": 16.5,
+            "stop1": 20.5,
+            "start2": 13.0,
+            "stop2": 20.5
+          }
+        ]
+      }
+    ]
+  }
+}

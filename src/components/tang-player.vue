@@ -88,13 +88,16 @@ defineExpose({
 <style lang="scss">
 .tang-player {
   text-align: center;
+  margin-bottom: 80px;
 
   .tang-row {
-    padding: 5px 0;
-    margin: 8px 0;
+    margin: 3px 0;
     .tang-col {
       display: inline-block;
-      padding: 6px 5px;
+      margin: 0 8px;
+      padding: 5px 5px;
+      border: 1px solid transparent;
+      border-radius: 5px;
       cursor: pointer;
 
       ruby {
@@ -115,13 +118,16 @@ defineExpose({
       }
     }
     .tang-col:hover {
-      background-color: var(--ep-color-primary-light-7);
-      border-radius: 5px;
+      background-color: var(--ep-color-primary-light-9);
+      border: 1px solid var(--ep-color-primary-light-5);
     }
   }
 
   .tang-audio {
-    margin: 15px 0;
+    position: fixed;
+    bottom: 5px;
+    text-align: center;
+    width: 100%;
   }
 }
 </style>

@@ -1,0 +1,77 @@
+{
+  "code": "00000",
+  "msg": "ok",
+  "result": {
+    "id": 160,
+    "title": "听邻家吹笙",
+    "audio": "//192.168.0.250/media/audio/唐诗三百首/160.mp3",
+    "node": "拼音参考书籍：《古代汉语常用字字典》 商务印书馆 2017年版",
+    "link": "https://www.cngwzj.com/pygushi/TangDai/17118/",
+    "rows": [
+      {  
+        "s": [
+          {
+            "pinyi": ["tīng", "lín", "jiā", "chuī", "shēng"],
+            "text": "听邻家吹笙",
+            "start1": 1.5,
+            "stop1": 999,
+            "start2": 1.5,
+            "stop2": 999
+          }
+        ]
+      },
+      {
+        "s": [
+          {
+            "pinyi": ["", "táng", "", "láng", "shì", "yuán"],
+            "text": "[唐]郎士元",
+            "start1": 1.5,
+            "stop1": 21.0,
+            "start2": 6.5,
+            "stop2": 21.0
+          }
+        ]
+      },
+      {
+        "s": [
+          {
+            "pinyi": ["fèng", "chuī", "shēng", "rú", "gé", "cǎi", "xiá"],
+            "text": "凤吹声如隔彩霞",
+            "start1": 6.5,
+            "stop1": 10.5,
+            "start2": 6.5,
+            "stop2": 13.7
+          },
+          {
+            "pinyi": ["bù", "zhī", "qiáng", "wài", "shì", "shuí", "jiā"],
+            "text": "不知墙外是谁家",
+            "start1": 10.5,
+            "stop1": 13.7,
+            "start2": 6.5,
+            "stop2": 13.7
+          }
+        ]
+      },
+      {
+        "s": [
+          {
+            "pinyi": ["chóng", "mén", "shēn", "suǒ", "wú", "xún", "chù"],
+            "text": "重门深锁无寻处",
+            "start1": 13.7,
+            "stop1": 16.9,
+            "start2": 13.7,
+            "stop2": 21.0
+          },
+          {
+            "pinyi": ["yí", "yǒu", "bì", "táo", "qiān", "shù", "huā"],
+            "text": "疑有碧桃千树花",
+            "start1": 16.9,
+            "stop1": 21.0,
+            "start2": 13.7,
+            "stop2": 21.0
+          }
+        ]
+      }
+    ]
+  }
+}

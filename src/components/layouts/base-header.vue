@@ -81,14 +81,15 @@ const handleSelect = (key: string, keyPath: string[]) => {
   top: 0;
   left: 0;
   position: relative;
-  z-index: var(vp-z-index-nav);
   padding: 0;
+  height: 59px;
+  overflow: hidden;
 
   .navbar-wrapper {
     position: relative;
-    border-bottom: 1px solid var(--vt-c-divider-light);
-    height: var(--vt-nav-height);
     background-color: var(--vt-c-bg);
+    border-bottom: 1px solid var(--ep-menu-border-color);
+    height: 58px;
     white-space: nowrap;
     transition: border-color 0.5s, background-color 0.5s;
 
@@ -96,6 +97,7 @@ const handleSelect = (key: string, keyPath: string[]) => {
       width: 960px;
       margin: 0 auto;
       transition: width 0.5s;
+      height: 59px;
     }
   }
 }

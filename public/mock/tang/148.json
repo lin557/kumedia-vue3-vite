@@ -25,7 +25,7 @@
           {
             "pinyi": ["", "táng", "", "wáng", "wéi"],
             "text": "[唐]王维",
-            "start1": 5.5,
+            "start1": 1.4,
             "stop1": 20.5,
             "start2": 5.5,
             "stop2": 20.5
@@ -35,16 +35,16 @@
       {
         "s": [
           {
-            "pinyi": ["xīn", "fēng", "měi", "jiǔ", "dǒu", "shí", "qiān", ""],
-            "text": "新丰美酒斗十千，",
+            "pinyi": ["xīn", "fēng", "měi", "jiǔ", "dǒu", "shí", "qiān"],
+            "text": "新丰美酒斗十千",
             "start1": 5.5,
             "stop1": 9.5,
             "start2": 5.5,
             "stop2": 13.1
           },
           {
-            "pinyi": ["xián", "yáng", "yóu", "xiá", "duō", "shào", "nián", ""],
-            "text": "咸阳游侠多少年。",
+            "pinyi": ["xián", "yáng", "yóu", "xiá", "duō", "shào", "nián"],
+            "text": "咸阳游侠多少年",
             "start1": 9.5,
             "stop1": 13.1,
             "start2": 5.5,
@@ -55,16 +55,16 @@
       {
         "s": [
           {
-            "pinyi": ["xiāng", "féng", "yì", "qì", "wèi", "jūn", "yǐn", ""],
-            "text": "相逢意气为君饮，",
+            "pinyi": ["xiāng", "féng", "yì", "qì", "wèi", "jūn", "yǐn"],
+            "text": "相逢意气为君饮",
             "start1": 13.1,
             "stop1": 16.8,
             "start2": 13.1,
             "stop2": 20.5
           },
           {
-            "pinyi": ["xì", "mǎ", "gāo", "lóu", "chuí", "liǔ", "biān", ""],
-            "text": "系马高楼垂柳边。",
+            "pinyi": ["xì", "mǎ", "gāo", "lóu", "chuí", "liǔ", "biān"],
+            "text": "系马高楼垂柳边",
             "start1": 16.8,
             "stop1": 20.5,
             "start2": 13.1,

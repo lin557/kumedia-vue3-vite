@@ -110,7 +110,7 @@ onMounted(() => {
 
   .tang-item {
     margin: 5px;
-    padding: 6px 5px;
+    padding: 7px 5px;
     // width: 228px;
     display: inline-block;
     border: 1px solid var(--ep-color-primary-light-7);

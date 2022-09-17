@@ -25,7 +25,7 @@
           {
             "pinyi": ["", "táng", "", "wáng", "zhī", "huàn"],
             "text": "[唐]王之涣",
-            "start1": 4.3,
+            "start1": 0,
             "stop1": 18.2,
             "start2": 4.3,
             "stop2": 18.2
@@ -35,16 +35,16 @@
       {
         "s": [
           {
-            "pinyi": ["huáng", "hé", "yuǎn", "shàng", "bái", "yún", "jiān", ""],
-            "text": "黄河远上白云间，",
+            "pinyi": ["huáng", "hé", "yuǎn", "shàng", "bái", "yún", "jiān"],
+            "text": "黄河远上白云间",
             "start1": 4.3,
             "stop1": 7.5,
             "start2": 4.3,
             "stop2": 11.1
           },
           {
-            "pinyi": ["yí", "piàn", "gū", "chéng", "wàn", "rèn", "shān", ""],
-            "text": "一片孤城万仞山。",
+            "pinyi": ["yí", "piàn", "gū", "chéng", "wàn", "rèn", "shān"],
+            "text": "一片孤城万仞山",
             "start1": 7.5,
             "stop1": 11.1,
             "start2": 4.3,
@@ -55,17 +55,17 @@
       {
         "s": [
           {
-            "pinyi": ["qiāng", "dí", "hé", "xū", "yuàn", "yáng", "liǔ", ""],
-            "text": "羌笛何须怨杨柳，",
+            "pinyi": ["qiāng", "dí", "hé", "xū", "yuàn", "yáng", "liǔ"],
+            "text": "羌笛何须怨杨柳",
             "start1": 11.1,
-            "stop1": 14.4,
+            "stop1": 14.3,
             "start2": 11.1,
             "stop2": 18.2
           },
           {
-            "pinyi": ["chūn", "fēng", "bú", "dù", "yù", "mén", "guān", ""],
-            "text": "春风不度玉门关。",
-            "start1": 14.4,
+            "pinyi": ["chūn", "fēng", "bú", "dù", "yù", "mén", "guān"],
+            "text": "春风不度玉门关",
+            "start1": 14.3,
             "stop1": 18.2,
             "start2": 11.1,
             "stop2": 18.2

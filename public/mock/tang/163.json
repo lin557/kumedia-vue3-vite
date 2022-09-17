@@ -1,0 +1,117 @@
+{
+  "code": "00000",
+  "msg": "ok",
+  "result": {
+    "id": 163,
+    "title": "望月怀远",
+    "audio": "//192.168.0.250/media/audio/唐诗三百首/163.mp3",
+    "node": "拼音参考书籍：《中华优秀古诗文诵读本 小学版 》中华书局，《小学生必背古诗词70+85首》 东南大学出版社",
+    "link": "https://www.cngwzj.com/pygushi/TangDai/8466/",
+    "rows": [
+      {  
+        "s": [
+          {
+            "pinyi": ["wàng", "yuè", "huái", "yuǎn"],
+            "text": "望月怀远",
+            "start1": 1.5,
+            "stop1": 999,
+            "start2": 1.5,
+            "stop2": 999
+          }
+        ]
+      },
+      {
+        "s": [
+          {
+            "pinyi": ["", "táng", "", "zhāng", "jiǔ", "líng"],
+            "text": "[唐]张九龄",
+            "start1": 1.5,
+            "stop1": 30.5,
+            "start2": 6.4,
+            "stop2": 30.5
+          }
+        ]
+      },
+      {
+        "s": [
+          {
+            "pinyi": ["hǎi", "shàng", "shēng", "míng", "yuè"],
+            "text": "海上生明月",
+            "start1": 6.4,
+            "stop1": 9.0,
+            "start2": 6.4,
+            "stop2": 12.3
+          },
+          {
+            "pinyi": ["tiān", "yá", "gòng", "cǐ", "shí"],
+            "text": "天涯共此时",
+            "start1": 9.0,
+            "stop1": 12.3,
+            "start2": 6.4,
+            "stop2": 12.3
+          }
+        ]
+      },
+      {
+        "s": [
+          {
+            "pinyi": ["qíng", "rén", "yuàn", "yáo", "yè"],
+            "text": "情人怨遥夜",
+            "start1": 12.3,
+            "stop1": 15.1,
+            "start2": 12.3,
+            "stop2": 18.7
+          },
+          {
+            "pinyi": ["jìng", "xī", "qǐ", "xiāng", "sī"],
+            "text": "竟夕起相思",
+            "start1": 15.1,
+            "stop1": 18.7,
+            "start2": 12.3,
+            "stop2": 18.7
+          }
+        ]
+      },
+      {
+        "s": [
+          {
+            "pinyi": ["miè", "zhú", "lián", "guāng", "mǎn"],
+            "text": "灭烛怜光满",
+            "start1": 18.7,
+            "stop1": 22.1,
+            "start2": 18.7,
+            "stop2": 25.2
+          },
+          {
+            "pinyi": ["pī", "yī", "jué", "lù", "zī"],
+            "text": "披衣觉露滋",
+            "start1": 22.1,
+            "stop1": 25.15,
+            "start2": 18.7,
+            "stop2": 25.2
+          }
+        ]
+      },
+      {
+        "s": [
+          {
+            "pinyi": ["bù", "kān", "yíng", "shǒu", "zèng"],
+            "text": "不堪盈手赠",
+            "start1": 25.15,
+            "stop1": 27.4,
+            "start2": 25.2,
+            "stop2": 30.5
+          },
+          {
+            "pinyi": ["huán", "qǐn", "mèng", "jiā", "qī"],
+            "text": "还寝梦佳期",
+            "start1": 27.4,
+            "stop1": 30.5,
+            "start2": 25.2,
+            "stop2": 30.5
+          }
+        ]
+      }
+    ]
+  }
+}

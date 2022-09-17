@@ -25,7 +25,7 @@
           {
             "pinyi": ["", "táng", "", "gāo", "shì"],
             "text": "[唐]高适",
-            "start1": 7.0,
+            "start1": 1.5,
             "stop1": 21.5,
             "start2": 7.0,
             "stop2": 21.5
@@ -35,16 +35,16 @@
       {
         "s": [
           {
-            "pinyi": ["qiān", "lǐ", "huáng", "yún", "bái", "rì", "xūn", ""],
-            "text": "千里黄云白日曛，",
+            "pinyi": ["qiān", "lǐ", "huáng", "yún", "bái", "rì", "xūn"],
+            "text": "千里黄云白日曛",
             "start1": 7.0,
             "stop1": 11.1,
             "start2": 7.0,
             "stop2": 14.6
           },
           {
-            "pinyi": ["běi", "fēng", "chuī", "yàn", "xuě", "fēn", "fēn", ""],
-            "text": "北风吹雁雪纷纷。",
+            "pinyi": ["běi", "fēng", "chuī", "yàn", "xuě", "fēn", "fēn"],
+            "text": "北风吹雁雪纷纷",
             "start1": 11.1,
             "stop1": 14.6,
             "start2": 7.0,
@@ -55,17 +55,17 @@
       {
         "s": [
           {
-            "pinyi": ["mò", "chóu", "qián", "lù", "wú", "zhī", "jǐ", ""],
-            "text": "莫愁前路无知己，",
+            "pinyi": ["mò", "chóu", "qián", "lù", "wú", "zhī", "jǐ"],
+            "text": "莫愁前路无知己",
             "start1": 14.6,
-            "stop1": 17.7,
+            "stop1": 17.5,
             "start2": 14.6,
             "stop2": 21.5
           },
           {
-            "pinyi": ["tiān", "xià", "shuí", "rén", "bù", "shí", "jūn", ""],
-            "text": "天下谁人不识君。",
-            "start1": 17.7,
+            "pinyi": ["tiān", "xià", "shuí", "rén", "bù", "shí", "jūn"],
+            "text": "天下谁人不识君",
+            "start1": 17.5,
             "stop1": 21.5,
             "start2": 14.6,
             "stop2": 21.5

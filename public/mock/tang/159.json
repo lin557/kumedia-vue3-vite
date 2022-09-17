@@ -25,7 +25,7 @@
           {
             "pinyi": ["", "táng", "", "gāo", "shì"],
             "text": "[唐]高适",
-            "start1": 5.4,
+            "start1": 1.5,
             "stop1": 19.0,
             "start2": 5.4,
             "stop2": 19.0
@@ -35,17 +35,17 @@
       {
         "s": [
           {
-            "pinyi": ["lǚ", "guǎn", "hán", "dēng", "dú", "bù", "mián", ""],
-            "text": "旅馆寒灯独不眠，",
+            "pinyi": ["lǚ", "guǎn", "hán", "dēng", "dú", "bù", "mián"],
+            "text": "旅馆寒灯独不眠",
             "start1": 5.4,
-            "stop1": 9.0,
+            "stop1": 8.8,
             "start2": 5.4,
             "stop2": 12.1
           },
           {
-            "pinyi": ["kè", "xīn", "hé", "shì", "zhuǎn", "qī", "rán", ""],
-            "text": "客心何事转凄然。",
-            "start1": 9.0,
+            "pinyi": ["kè", "xīn", "hé", "shì", "zhuǎn", "qī", "rán"],
+            "text": "客心何事转凄然",
+            "start1": 8.8,
             "stop1": 12.1,
             "start2": 5.4,
             "stop2": 12.1
@@ -55,17 +55,17 @@
       {
         "s": [
           {
-            "pinyi": ["gù", "xiāng", "jīn", "yè", "sī", "qiān", "lǐ", ""],
-            "text": "故乡今夜思千里，",
+            "pinyi": ["gù", "xiāng", "jīn", "yè", "sī", "qiān", "lǐ"],
+            "text": "故乡今夜思千里",
             "start1": 12.1,
-            "stop1": 14.8,
+            "stop1": 14.75,
             "start2": 12.1,
             "stop2": 19.0
           },
           {
-            "pinyi": ["shuāng", "bìn", "míng", "zhāo", "yòu", "yī", "nián", ""],
-            "text": "霜鬓明朝又一年。",
-            "start1": 14.8,
+            "pinyi": ["shuāng", "bìn", "míng", "zhāo", "yòu", "yī", "nián"],
+            "text": "霜鬓明朝又一年",
+            "start1": 14.75,
             "stop1": 19.0,
             "start2": 12.1,
             "stop2": 19.0

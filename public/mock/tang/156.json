@@ -25,7 +25,7 @@
           {
             "pinyi": ["", "táng", "", "zhāng", "jí"],
             "text": "[唐]张籍",
-            "start1": 5.7,
+            "start1": 1.5,
             "stop1": 19.5,
             "start2": 5.7,
             "stop2": 19.5
@@ -35,16 +35,16 @@
       {
         "s": [
           {
-            "pinyi": ["luò", "yáng", "chéng", "lǐ", "jiàn", "qiū", "fēng", ""],
-            "text": "洛阳城里见秋风，",
+            "pinyi": ["luò", "yáng", "chéng", "lǐ", "jiàn", "qiū", "fēng"],
+            "text": "洛阳城里见秋风",
             "start1": 5.7,
             "stop1": 9.2,
             "start2": 5.7,
             "stop2": 12.9
           },
           {
-            "pinyi": ["yù", "zuò", "jiā", "shū", "yì", "wàn", "chóng", ""],
-            "text": "欲作家书意万重。",
+            "pinyi": ["yù", "zuò", "jiā", "shū", "yì", "wàn", "chóng"],
+            "text": "欲作家书意万重",
             "start1": 9.2,
             "stop1": 12.9,
             "start2": 5.7,
@@ -55,17 +55,17 @@
       {
         "s": [
           {
-            "pinyi": ["fù", "kǒng", "cōng", "cōng", "shuō", "bú", "jìn", ""],
-            "text": "复恐匆匆说不尽，",
+            "pinyi": ["fù", "kǒng", "cōng", "cōng", "shuō", "bú", "jìn"],
+            "text": "复恐匆匆说不尽",
             "start1": 12.9,
-            "stop1": 15.7,
+            "stop1": 15.6,
             "start2": 12.9,
             "stop2": 19.5
           },
           {
-            "pinyi": ["xíng", "rén", "lín", "fā", "yòu", "kāi", "fēng", ""],
-            "text": "行人临发又开封。",
-            "start1": 15.7,
+            "pinyi": ["xíng", "rén", "lín", "fā", "yòu", "kāi", "fēng"],
+            "text": "行人临发又开封",
+            "start1": 15.6,
             "stop1": 19.5,
             "start2": 12.9,
             "stop2": 19.5

@@ -184,27 +184,35 @@ code {
     padding: 0 6px;
   }
 
-  .video-playbox {
-    height: 260px;
-    
-    .vvp-player {
-      width: 100% !important;
-    }
+  .video-container {
+    .video-playbox {
+      height: 260px; 
 
-    .video-list {
-      width: 100% !important;
-      .video-title {
-        padding: 5px !important;
+      .vd-player {
+        width: 100% !important;
       }
-      .video-sub {
-        padding-bottom: 0 !important;
-      }
-      .video-ep {
-        height: calc(100% - 72px) !important;
-        .video-ep-item {
-          width: 49.2px !important;
+
+      .video-list {
+        width: 100% !important;
+        .video-title {
+          padding: 5px !important;
+        }
+        .video-sub {
+          padding-bottom: 0 !important;
+        }
+        .video-ep {
+          height: calc(100% - 72px) !important;
+          .video-ep-item {
+            width: 49.2px !important;
+          }
         }
       }
+    }
+  }
+
+  .movie-container {
+    .video-playbox {
+      height: 260px;
     }
   }
 
@@ -226,21 +234,28 @@ code {
     width: 175px;
   }
 
-  .video-playbox {
-    height: 320px;
+  .video-container {
+    .video-playbox {
+      height: 320px;
+      .vd-player {
+        width: calc(100% - 282px) !important;
+      }
 
-    .vvp-player {
-      width: calc(100% - 282px) !important;
+      .video-list {
+        width: 282px !important;
+      }
     }
+  }
 
-    .video-list {
-      width: 282px !important;
+  .movie-container {
+    .video-playbox {
+      height: 320px;
     }
   }
 
   .tang-container {
     .tang-item {
-      width: 206px;
+      width: 323px;
     }
   }
 }
@@ -255,22 +270,30 @@ code {
   .g-col {
     width: 192px;
   }
+  
+  .video-container {
+    .video-playbox {
+      height: 460px;
 
-  .video-playbox {
-    height: 460px;
+      .vd-player {
+        width: calc(100% - 282px) !important;
+      }
 
-    .vvp-player {
-      width: calc(100% - 282px) !important;
+      .video-list {
+        width: 282px !important;
+      }
     }
+  }
 
-    .video-list {
-      width: 282px !important;
+  .movie-container {
+    .video-playbox {
+      height: 460px;
     }
   }
 
   .tang-container {
     .tang-item {
-      width: 214px;
+      width: 290px;
     }
   }
 }
@@ -292,7 +315,7 @@ code {
 
   .tang-container {
     .tang-item {
-      width: 203px;
+      width: 257px;
     }
   }
 }
@@ -314,7 +337,7 @@ code {
 
   .tang-container {
     .tang-item {
-      width: 221px;
+      width: 280px;
     }
   }
 }
@@ -336,7 +359,7 @@ code {
 
   .tang-container {
     .tang-item {
-      width: 233px;
+      width: 282px;
     }
   }
 }
@@ -358,7 +381,7 @@ code {
 
   .tang-container {
     .tang-item {
-      width: 228px;
+      width: 268px;
     }
   }
 }

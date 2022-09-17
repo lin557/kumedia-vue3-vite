@@ -1,11 +1,13 @@
 import axios from '~/utils/vue-http'
 
-interface TangWork {
+export interface TangWork {
+  id: number
   title: string
   path: string
+  author?: string
 }
 
-interface TangItem {
+export interface TangItem {
   author: string
   works: Array<TangWork>
 }

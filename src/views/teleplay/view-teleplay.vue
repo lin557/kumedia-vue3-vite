@@ -1,12 +1,7 @@
 <template>
   <div class="video-container common-container">
     <div class="video-playbox">
-      <vue3-player
-        ref="playerRef"
-        :poster="listJson.poster"
-        :options="playOptions"
-        :auto-rate="{ enabled: false }"
-      />
+      <vd-player ref="playerRef" :poster="listJson.poster" />
       <div class="video-list">
         <div class="video-title">{{ listJson.title }}</div>
         <div class="video-sub">{{ listJson.performer }}</div>
@@ -35,7 +30,7 @@
 import { onMounted, ref, reactive } from 'vue'
 import { useRoute } from 'vue-router'
 import { getTeleplayJson, MediaJson } from '~/api/media'
-import Vue3Player from '~/components/videojs/vue3-player.vue'
+import VdPlayer from '~/components/dplayer/vd-player.vue'
 
 let _listJson: MediaJson = {
   title: '',
@@ -46,14 +41,6 @@ let _listJson: MediaJson = {
 let listJson = reactive(_listJson)
 let playInfo = reactive({
   title: '',
-})
-const playOptions = reactive({
-  autoplay: true,
-  controls: true,
-  controlBar: {
-    closeButton: false,
-  },
-  muted: true,
 })
 
 let activeIndex = ref('')
@@ -71,12 +58,11 @@ const getJson = async (id: string) => {
   return await getTeleplayJson(id)
 }
 
-const playerRef = ref<InstanceType<typeof Vue3Player>>()
+const playerRef = ref<InstanceType<typeof VdPlayer>>()
 
 const play = (title: string, url: string) => {
   const opt = {
     src: url,
-    isLive: false,
   }
   activeIndex.value = title
   playInfo.title = listJson.title + ' (' + title + ')'
@@ -119,7 +105,7 @@ onMounted(() => {
 .video-container {
   padding-top: 15px;
 
-  .vvp-player {
+  .vd-player {
     width: calc(100% - 336px);
     height: 100%;
     display: inline-block;

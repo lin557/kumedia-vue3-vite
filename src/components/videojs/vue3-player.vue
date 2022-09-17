@@ -14,7 +14,7 @@
         <div class="vvp-error-button">
           <span @click="close()"></span>
         </div>
-        <div class="vvp-error-text" v-html="self.error"></div>
+        <div class="vvp-error-text">{{ self.error }}</div>
       </div>
     </div>
   </div>
@@ -31,7 +31,7 @@ import {
 import videojs from 'video.js'
 import 'video.js/dist/video-js.min.css'
 import 'videojs-hotkeys'
-import '@digitaltheatre/videojs-theme-dt/dist/theme/index.css'
+import './css/videojs-filmgardi.css'
 
 interface PlayerX extends videojs.Player {
   header: {
@@ -56,9 +56,14 @@ const defaultVideoJsPlayerOptions = {
     closeButton: false,
     subsCapsButton: false,
   },
+  nativeControlsForTouch: true,
+  // preferFullWindow: true,
+  // userActions: {
+  //   click: false,
+  // },
   plugins: {
     hotkeys: {
-      volumeStep: 0.1,
+      volumeStep: 0.05,
       seekStep: 10,
       enableModifiersForNumbers: false,
     },
@@ -238,7 +243,7 @@ const createPlayer = () => {
   const el = document.createElement('video')
   el.id = self.id
   // vjs-theme-dt
-  el.className = 'video-js vjs-theme-dt'
+  el.className = 'video-js vjs-big-play-centered vjs-filmgardi'
   el.setAttribute('preload', '')
   el.innerHTML =
     '<p class="vjs-no-js">Please consider upgrading to a web browser that supports HTML5 video</p>'
@@ -360,6 +365,7 @@ const createPlayer = () => {
   //   console.log('abort')
   // })
   // })
+  console.log(player)
 }
 
 const destoryPlayer = () => {
@@ -659,6 +665,16 @@ $footerHeight: 30px;
     }
   }
 
+  .vjs-theme-dt {
+    .vjs-volume-vertical {
+      .vjs-volume-bar {
+        margin: 1.35em auto;
+      }
+      .vjs-volume-level:before {
+        left: -0.5em;
+      }
+    }
+  }
   .vjs-header {
     position: absolute;
     top: 0px;
@@ -702,10 +718,6 @@ $footerHeight: 30px;
   .vjs-has-started.vjs-user-inactive.vjs-playing .vjs-fetch-flv-ctx {
     top: 0px !important;
     transition: top 1.1s;
-  }
-
-  .vjs-slider-horizontal .vjs-volume-level:before {
-    top: -0.5em;
   }
 
   .vvp-hide {

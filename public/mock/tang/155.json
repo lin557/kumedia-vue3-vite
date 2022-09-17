@@ -1,0 +1,77 @@
+{
+  "code": "00000",
+  "msg": "ok",
+  "result": {
+    "id": 155,
+    "title": "湘江曲",
+    "audio": "//192.168.0.250/media/audio/唐诗三百首/155.mp3",
+    "node": "拼音参考书籍：《古代汉语常用字字典》 商务印书馆 2017年版",
+    "link": "https://www.cngwzj.com/pygushi/TangDai/23499/",
+    "rows": [
+      {  
+        "s": [
+          {
+            "pinyi": ["xiāng", "jiāng", "qǔ"],
+            "text": "湘江曲",
+            "start1": 1.5,
+            "stop1": 999,
+            "start2": 1.5,
+            "stop2": 999
+          }
+        ]
+      },
+      {
+        "s": [
+          {
+            "pinyi": ["", "táng", "", "zhāng", "jí"],
+            "text": "[唐]张籍",
+            "start1": 5.3,
+            "stop1": 20.5,
+            "start2": 5.3,
+            "stop2": 20.5
+          }
+        ]
+      },
+      {
+        "s": [
+          {
+            "pinyi": ["xiāng", "shuǐ", "wú", "cháo", "qiū", "shuǐ", "kuò", ""],
+            "text": "湘水无潮秋水阔，",
+            "start1": 5.3,
+            "stop1": 8.8,
+            "start2": 5.3,
+            "stop2": 13.2
+          },
+          {
+            "pinyi": ["xiāng", "zhōng", "yuè", "luò", "yuè", "rén", "fā", ""],
+            "text": "湘中月落行人发。",
+            "start1": 8.8,
+            "stop1": 13.2,
+            "start2": 5.3,
+            "stop2": 13.2
+          }
+        ]
+      },
+      {
+        "s": [
+          {
+            "pinyi": ["sòng", "rén", "fā", "", "sòng", "rén", "guī", ""],
+            "text": "送人发，送人归，",
+            "start1": 13.2,
+            "stop1": 16.3,
+            "start2": 13.2,
+            "stop2": 20.5
+          },
+          {
+            "pinyi": ["bái", "pín", "máng", "máng", "zhè", "gū", "fēi", ""],
+            "text": "白蘋茫茫鹧鸪飞。",
+            "start1": 16.3,
+            "stop1": 20.5,
+            "start2": 13.2,
+            "stop2": 20.5
+          }
+        ]
+      }
+    ]
+  }
+}

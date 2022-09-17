@@ -1,8 +1,8 @@
 <template>
-  <div class="video-container common-container">
+  <div class="movie-container common-container">
     <div class="video-playbox">
-      <vue-xplayer ref="playerRef" :poster="listJson.poster" />
-      <div class="video-list">
+      <vd-player ref="playerRef" :poster="listJson.poster" />
+      <div class="video-list-m">
         <div class="video-title">{{ listJson.title }}</div>
         <div class="video-sub">{{ listJson.performer }}</div>
         <div class="video-ep">
@@ -30,7 +30,8 @@
 import { onMounted, ref, reactive } from 'vue'
 import { useRoute } from 'vue-router'
 import { getMovieJson, MediaJson } from '~/api/media'
-import VueXplayer from '~/components/vue-xplayer.vue'
+// import Vue3player from '~/components/videojs/vue3-player.vue'
+import VdPlayer from '~/components/dplayer/vd-player.vue'
 
 let _listJson: MediaJson = {
   title: '',
@@ -58,11 +59,11 @@ const getJson = async (id: string) => {
   return await getMovieJson(id)
 }
 
-const playerRef = ref<InstanceType<typeof VueXplayer>>()
+const playerRef = ref<InstanceType<typeof VdPlayer>>()
 
 const play = (title: string, url: string) => {
   const opt = {
-    url: url,
+    src: url,
   }
   activeIndex.value = title
   playInfo.title = listJson.title + ' (' + title + ')'
@@ -102,19 +103,14 @@ onMounted(() => {
 </script>
 
 <style lang="scss">
-.video-container {
+.movie-container {
   padding-top: 15px;
 
-  .vue-xplayer {
-    width: calc(100% - 336px);
-    height: 100%;
-    display: inline-block;
-  }
-
-  .video-list {
-    width: 336px;
-    height: 100%;
-    display: inline-block;
+  .video-list-m {
+    margin-top: 15px;
+    width: 100%;
+    border: 1px solid var(--ep-color-success-light-5);
+    border-radius: 5px;
     box-sizing: border-box;
     vertical-align: top;
     background-color: var(--ep-color-success-light-9);
@@ -148,10 +144,10 @@ onMounted(() => {
       height: calc(100% - 88px);
       .video-ep-item {
         display: inline-block;
-        width: 42px;
-        height: 32px;
+        width: 80px;
+        height: 36px;
         text-align: center;
-        line-height: 32px;
+        line-height: 34px;
         font-size: 13px;
         cursor: pointer;
         border-radius: 3px;

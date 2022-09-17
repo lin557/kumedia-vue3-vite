@@ -1,0 +1,77 @@
+{
+  "code": "00000",
+  "msg": "ok",
+  "result": {
+    "id": 156,
+    "title": "秋思",
+    "audio": "//192.168.0.250/media/audio/唐诗三百首/156.mp3",
+    "node": "拼音参考书籍：《中华经典诗文诵读》山东教育出版社 二，《古代汉语常用字字典》 商务印书馆 2017年版",
+    "link": "https://www.cngwzj.com/pygushi/TangDai/23827/",
+    "rows": [
+      {  
+        "s": [
+          {
+            "pinyi": ["qiū", "sī"],
+            "text": "秋思",
+            "start1": 1.5,
+            "stop1": 999,
+            "start2": 1.5,
+            "stop2": 999
+          }
+        ]
+      },
+      {
+        "s": [
+          {
+            "pinyi": ["", "táng", "", "zhāng", "jí"],
+            "text": "[唐]张籍",
+            "start1": 5.7,
+            "stop1": 19.5,
+            "start2": 5.7,
+            "stop2": 19.5
+          }
+        ]
+      },
+      {
+        "s": [
+          {
+            "pinyi": ["luò", "yáng", "chéng", "lǐ", "jiàn", "qiū", "fēng", ""],
+            "text": "洛阳城里见秋风，",
+            "start1": 5.7,
+            "stop1": 9.2,
+            "start2": 5.7,
+            "stop2": 12.9
+          },
+          {
+            "pinyi": ["yù", "zuò", "jiā", "shū", "yì", "wàn", "chóng", ""],
+            "text": "欲作家书意万重。",
+            "start1": 9.2,
+            "stop1": 12.9,
+            "start2": 5.7,
+            "stop2": 12.9
+          }
+        ]
+      },
+      {
+        "s": [
+          {
+            "pinyi": ["fù", "kǒng", "cōng", "cōng", "shuō", "bú", "jìn", ""],
+            "text": "复恐匆匆说不尽，",
+            "start1": 12.9,
+            "stop1": 15.7,
+            "start2": 12.9,
+            "stop2": 19.5
+          },
+          {
+            "pinyi": ["xíng", "rén", "lín", "fā", "yòu", "kāi", "fēng", ""],
+            "text": "行人临发又开封。",
+            "start1": 15.7,
+            "stop1": 19.5,
+            "start2": 12.9,
+            "stop2": 19.5
+          }
+        ]
+      }
+    ]
+  }
+}

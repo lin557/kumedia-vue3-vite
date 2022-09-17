@@ -8,12 +8,16 @@
         "author": "骆宾王",
         "works": [
           {
+            "id": 1,
             "title": "咏鹅",
-            "path": "/tang/1"
+            "path": "/tang/1",
+            "author": "骆宾王"
           },
           {
+            "id": 8,
             "title": "易水送别",
-            "path": "/tang/8"
+            "path": "/tang/8",
+            "author": "骆宾王"
           }
         ]
       },
@@ -21,12 +25,16 @@
         "author": "李白",
         "works": [
           {
+            "id": 153,
             "title": "访戴天山道士不遇",
-            "path": "/tang/153"
+            "path": "/tang/153",
+            "author": "李白"
           },
           {
+            "id": 154,
             "title": "军行",
-            "path": "/tang/154"
+            "path": "/tang/154",
+            "author": "李白"
           }
         ]
       },
@@ -34,12 +42,16 @@
         "author": "王之涣",
         "works": [
           {
+            "id": 9,
             "title": "登鹳雀楼",
-            "path": "/tang/9"
+            "path": "/tang/9",
+            "author": "王之涣"
           },
           {
+            "id": 152,
             "title": "凉州词",
-            "path": "/tang/152"
+            "path": "/tang/152",
+            "author": "王之涣"
           }
         ]
       },
@@ -47,16 +59,22 @@
         "author": "王维",
         "works": [
           {
+            "id": 148,
             "title": "少年行（其一）",
-            "path": "/tang/148"
+            "path": "/tang/148",
+            "author": "王维"
           },
           {
+            "id": 149,
             "title": "少年行（其二）",
-            "path": "/tang/149"
+            "path": "/tang/149",
+            "author": "王维"
           },
           {
+            "id": 150,
             "title": "九月九日忆山东兄弟",
-            "path": "/tang/150"
+            "path": "/tang/150",
+            "author": "王维"
           }
         ]
       },
@@ -64,8 +82,50 @@
         "author": "王翰",
         "works": [
           {
+            "id": 151,
             "title": "凉州词",
-            "path": "/tang/151"
+            "path": "/tang/151",
+            "author": "王翰"
+          }
+        ]
+      },
+      {
+        "author": "张籍",
+        "works": [
+          {
+            "id": 155,
+            "title": "湘江曲",
+            "path": "/tang/155",
+            "author": "张籍"
+          },
+          {
+            "id": 156,
+            "title": "秋思",
+            "path": "/tang/156",
+            "author": "张籍"
+          },
+          {
+            "id": 157,
+            "title": "成都曲",
+            "path": "/tang/157",
+            "author": "张籍"
+          }
+        ]
+      },
+      {
+        "author": "高适",
+        "works": [
+          {
+            "id": 158,
+            "title": "别董大（其一）",
+            "path": "/tang/158",
+            "author": "高适"
+          },
+          {
+            "id": 159,
+            "title": "除夜作",
+            "path": "/tang/159",
+            "author": "高适"
           }
         ]
       }

@@ -14,7 +14,7 @@ const routes: Array<RouteRecordRaw> = [
     path: '/',
     name: 'home',
     component: Layout,
-    redirect: '/teleplay',
+    redirect: '/tang',
     meta: {
       title: '首页',
     },

@@ -1,4 +1,4 @@
-import { defineConfig, loadEnv } from 'vite'
+import { defineConfig, loadEnv, splitVendorChunkPlugin } from 'vite'
 import path from 'path'
 import vue from '@vitejs/plugin-vue'
 import Components from 'unplugin-vue-components/vite'
@@ -44,16 +44,16 @@ export default defineConfig(({ command, mode, ssrBuild }) => {
           manualChunks(id, { getModuleInfo }) {
             // 使用axios后 打包出来的出来的程序无法直接在浏览中打开 可以使用liveserver解决
             // 创建一个vendor包含所有依赖项的块node_modules
-            // console.log(id)
+            console.log(id)
             if (id.includes('element-plus')) {
               return 'element-plus'
             }
-            if (id.includes('DPlayer.min')) {
-              return 'dplayer'
+            if (id.includes('videojs') || id.includes('video.js')) {
+              return 'videojs'
             }
-            if (id.includes('node_modules')) {
-              return 'vendor'
-            }
+            // if (id.includes('node_modules')) {
+            //   return 'vendor'
+            // }
             // if (id.includes('node_modules')) {
             //   return id
             //     .toString()
@@ -74,6 +74,7 @@ export default defineConfig(({ command, mode, ssrBuild }) => {
     plugins: [
       vue(),
       eslintPlugin,
+      splitVendorChunkPlugin(),
       Components({
         // allow auto load markdown components under `./src/components/`
         extensions: ['vue', 'md'],

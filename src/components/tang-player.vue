@@ -7,8 +7,8 @@
           <template v-for="(si, index1) in s" :key="index1">
             <div
               class="tang-col"
-              @click="handleAudio(si.start2, si.stop2)"
-              @dblclick="handleAudio(si.start1, si.stop1)"
+              @click="handleAudio(si.start1, si.stop1)"
+              @dblclick="handleAudio(si.start2, si.stop2)"
             >
               <template v-for="(item, index2) in si.text" :key="index2">
                 <ruby>
@@ -94,7 +94,7 @@ defineExpose({
     margin: 8px 0;
     .tang-col {
       display: inline-block;
-      padding: 6px 0;
+      padding: 6px 5px;
       cursor: pointer;
 
       ruby {
@@ -113,6 +113,10 @@ defineExpose({
           padding-bottom: 6px;
         }
       }
+    }
+    .tang-col:hover {
+      background-color: var(--ep-color-primary-light-7);
+      border-radius: 5px;
     }
   }
 

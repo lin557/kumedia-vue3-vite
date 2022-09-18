@@ -1,0 +1,77 @@
+{
+  "code": "00000",
+  "msg": "ok",
+  "result": {
+    "id": 167,
+    "title": "清平调（其一）",
+    "audio": "//192.168.0.250/media/audio/唐诗三百首/167.mp3",
+    "node": "拼音参考书籍：《古代汉语常用字字典》 商务印书馆 2017年版，《唐诗三百首》河南人民出版社，《唐诗三百首》中华书局，《唐诗三百首》南京大学出版社",
+    "link": "https://www.cngwzj.com/pygushi/TangDai/75841/",
+    "rows": [
+      {  
+        "s": [
+          {
+            "pinyi": ["qīng", "píng", "diào", "", "qí", "yī", ""],
+            "text": "清平调（其一）",
+            "start1": 0,
+            "stop1": 999,
+            "start2": 0,
+            "stop2": 999
+          }
+        ]
+      },
+      {
+        "s": [
+          {
+            "pinyi": ["", "táng", "", "lǐ", "bái"],
+            "text": "[唐]李白",
+            "start1": 0,
+            "stop1": 17.6,
+            "start2": 3.6,
+            "stop2": 17.6
+          }
+        ]
+      },
+      {
+        "s": [
+          {
+            "pinyi": ["yún", "xiǎng", "yī", "cháng", "huā", "xiǎng", "róng"],
+            "text": "云想衣裳花想容",
+            "start1": 3.6,
+            "stop1": 6.9,
+            "start2": 3.6,
+            "stop2": 10.6
+          },
+          {
+            "pinyi": ["chūn", "fēng", "fú", "jiàn", "lù", "huá", "nóng"],
+            "text": "春风拂槛露华浓",
+            "start1": 6.9,
+            "stop1": 10.6,
+            "start2": 3.6,
+            "stop2": 10.6
+          }
+        ]
+      },
+      {
+        "s": [
+          {
+            "pinyi": ["ruò", "fēi", "qún", "yù", "shān", "tóu", "jiàn"],
+            "text": "若非群玉山头见",
+            "start1": 10.6,
+            "stop1": 13.2,
+            "start2": 10.6,
+            "stop2": 17.6
+          },
+          {
+            "pinyi": ["huì", "xiàng", "yáo", "tái", "yuè", "xià", "féng"],
+            "text": "会向瑶台月下逢",
+            "start1": 13.2,
+            "stop1": 17.6,
+            "start2": 10.6,
+            "stop2": 17.6
+          }
+        ]
+      }
+    ]
+  }
+}

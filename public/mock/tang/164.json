@@ -1,0 +1,77 @@
+{
+  "code": "00000",
+  "msg": "ok",
+  "result": {
+    "id": 164,
+    "title": "公子行",
+    "audio": "//192.168.0.250/media/audio/唐诗三百首/164.mp3",
+    "node": "拼音参考书籍：《古代汉语常用字字典》 商务印书馆 2017年版",
+    "link": "https://www.cngwzj.com/pygushi/TangDai/44972/",
+    "rows": [
+      {  
+        "s": [
+          {
+            "pinyi": ["gōng", "zǐ", "xíng"],
+            "text": "公子行",
+            "start1": 0,
+            "stop1": 999,
+            "start2": 0,
+            "stop2": 999
+          }
+        ]
+      },
+      {
+        "s": [
+          {
+            "pinyi": ["", "táng", "", "guàn", "xiū"],
+            "text": "[唐]贯休",
+            "start1": 0,
+            "stop1": 18.7,
+            "start2": 3.3,
+            "stop2": 18.7
+          }
+        ]
+      },
+      {
+        "s": [
+          {
+            "pinyi": ["jǐn", "yī", "xiān", "huá", "shǒu", "qíng", "hú"],
+            "text": "锦衣鲜华手擎鹘",
+            "start1": 3.3,
+            "stop1": 7.2,
+            "start2": 3.3,
+            "stop2": 11.2
+          },
+          {
+            "pinyi": ["xián", "xíng", "qì", "mào", "duō", "qīng", "hū"],
+            "text": "闲行气貌多轻忽",
+            "start1": 7.2,
+            "stop1": 11.2,
+            "start2": 3.3,
+            "stop2": 11.2
+          }
+        ]
+      },
+      {
+        "s": [
+          {
+            "pinyi": ["jià", "sè", "jiān", "nán", "zǒng", "bù", "zhī"],
+            "text": "稼穑艰难总不知",
+            "start1": 11.2,
+            "stop1": 14.75,
+            "start2": 11.2,
+            "stop2": 18.7
+          },
+          {
+            "pinyi": ["wǔ", "dì", "sān", "huáng", "shì", "hé", "wù"],
+            "text": "五帝三皇是何物",
+            "start1": 14.75,
+            "stop1": 18.7,
+            "start2": 11.2,
+            "stop2": 18.7
+          }
+        ]
+      }
+    ]
+  }
+}

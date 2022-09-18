@@ -1,0 +1,77 @@
+{
+  "code": "00000",
+  "msg": "ok",
+  "result": {
+    "id": 169,
+    "title": "清平调（其三）",
+    "audio": "//192.168.0.250/media/audio/唐诗三百首/169.mp3",
+    "node": "拼音参考书籍：《古代汉语常用字字典》 商务印书馆 2017年版，《唐诗三百首》河南人民出版社，《唐诗三百首》中华书局，《唐诗三百首》南京大学出版社",
+    "link": "https://www.cngwzj.com/pygushi/TangDai/75841/",
+    "rows": [
+      {  
+        "s": [
+          {
+            "pinyi": ["qīng", "píng", "diào", "", "qí", "sān", ""],
+            "text": "清平调（其三）",
+            "start1": 1.0,
+            "stop1": 999,
+            "start2": 1.0,
+            "stop2": 999
+          }
+        ]
+      },
+      {
+        "s": [
+          {
+            "pinyi": ["", "táng", "", "lǐ", "bái"],
+            "text": "[唐]李白",
+            "start1": 1.0,
+            "stop1": 18.9,
+            "start2": 5.3,
+            "stop2": 18.9
+          }
+        ]
+      },
+      {
+        "s": [
+          {
+            "pinyi": ["míng", "huā", "qīng", "guó", "liǎng", "xiāng", "huān"],
+            "text": "名花倾国两相欢",
+            "start1": 5.3,
+            "stop1": 8.9,
+            "start2": 5.3,
+            "stop2": 12.3
+          },
+          {
+            "pinyi": ["cháng", "dé", "jūn", "wáng", "dài", "xiào", "kàn"],
+            "text": "长得君王带笑看",
+            "start1": 8.9,
+            "stop1": 12.3,
+            "start2": 5.3,
+            "stop2": 12.3
+          }
+        ]
+      },
+      {
+        "s": [
+          {
+            "pinyi": ["jiě", "shì", "chūn", "fēng", "wú", "xiàn", "hèn"],
+            "text": "解释春风无限恨",
+            "start1": 12.3,
+            "stop1": 15.0,
+            "start2": 12.3,
+            "stop2": 18.9
+          },
+          {
+            "pinyi": ["chén", "xiāng", "tíng", "běi", "yǐ", "lán", "gān"],
+            "text": "沉香亭北倚阑干",
+            "start1": 15.0,
+            "stop1": 18.9,
+            "start2": 12.3,
+            "stop2": 18.9
+          }
+        ]
+      }
+    ]
+  }
+}

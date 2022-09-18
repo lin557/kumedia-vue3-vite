@@ -1,0 +1,77 @@
+{
+  "code": "00000",
+  "msg": "ok",
+  "result": {
+    "id": 165,
+    "title": "春晚书山家屋壁（其一）",
+    "audio": "//192.168.0.250/media/audio/唐诗三百首/165.mp3",
+    "node": "拼音参考书籍：《小学生经典诵读》 浙江古籍出版社，《古代汉语常用字字典》 商务印书馆 2017年版",
+    "link": "https://www.cngwzj.com/pygushi/TangDai/44992/",
+    "rows": [
+      {  
+        "s": [
+          {
+            "pinyi": ["chūn", "wǎn", "shū", "shān", "jiā", "wū", "bì", "", "qí", "yī", ""],
+            "text": "春晚书山家屋壁（其一）",
+            "start1": 0,
+            "stop1": 999,
+            "start2": 0,
+            "stop2": 999
+          }
+        ]
+      },
+      {
+        "s": [
+          {
+            "pinyi": ["", "táng", "", "guàn", "xiū"],
+            "text": "[唐]贯休",
+            "start1": 0,
+            "stop1": 20.5,
+            "start2": 6.4,
+            "stop2": 20.5
+          }
+        ]
+      },
+      {
+        "s": [
+          {
+            "pinyi": ["chái", "mén", "jì", "jì", "shǔ", "fàn", "xīn"],
+            "text": "柴门寂寂黍饭馨",
+            "start1": 6.4,
+            "stop1": 10.0,
+            "start2": 6.4,
+            "stop2": 13.4
+          },
+          {
+            "pinyi": ["shān", "jiā", "yān", "huǒ", "chūn", "yǔ", "qíng"],
+            "text": "山家烟火春雨晴",
+            "start1": 10.0,
+            "stop1": 13.4,
+            "start2": 6.4,
+            "stop2": 13.4
+          }
+        ]
+      },
+      {
+        "s": [
+          {
+            "pinyi": ["tíng", "huā", "méng", "méng", "shuǐ", "líng", "líng"],
+            "text": "庭花蒙蒙水泠泠",
+            "start1": 13.4,
+            "stop1": 16.5,
+            "start2": 13.4,
+            "stop2": 20.5
+          },
+          {
+            "pinyi": ["xiǎo", "ér", "tí", "suǒ", "shù", "shàng", "yīng"],
+            "text": "小儿啼索树上莺",
+            "start1": 16.5,
+            "stop1": 20.5,
+            "start2": 13.4,
+            "stop2": 20.5
+          }
+        ]
+      }
+    ]
+  }
+}

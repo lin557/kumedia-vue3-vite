@@ -1,0 +1,117 @@
+{
+  "code": "00000",
+  "msg": "ok",
+  "result": {
+    "id": 170,
+    "title": "在狱咏蝉",
+    "audio": "//192.168.0.250/media/audio/唐诗三百首/170.mp3",
+    "node": "拼音参考书籍：《国学经典诵读本》 团结出版社 2017年11月版本",
+    "link": "https://www.cngwzj.com/pygushi/TangDai/9512/",
+    "rows": [
+      {  
+        "s": [
+          {
+            "pinyi": ["zài", "yù", "yǒng", "chán"],
+            "text": "在狱咏蝉",
+            "start1": 1.5,
+            "stop1": 999,
+            "start2": 1.5,
+            "stop2": 999
+          }
+        ]
+      },
+      {
+        "s": [
+          {
+            "pinyi": ["", "táng", "", "luò", "bīn", "wáng"],
+            "text": "[唐]骆宾王",
+            "start1": 1.5,
+            "stop1": 30.5,
+            "start2": 6.3,
+            "stop2": 30.5
+          }
+        ]
+      },
+      {
+        "s": [
+          {
+            "pinyi": ["xī", "lù", "chán", "shēng", "chàng"],
+            "text": "西陆蝉声唱",
+            "start1": 6.3,
+            "stop1": 9.0,
+            "start2": 6.3,
+            "stop2": 12.2
+          },
+          {
+            "pinyi": ["nán", "guān", "kè", "sī", "shēn"],
+            "text": "南冠客思深",
+            "start1": 9.0,
+            "stop1": 12.2,
+            "start2": 6.3,
+            "stop2": 12.2
+          }
+        ]
+      },
+      {
+        "s": [
+          {
+            "pinyi": ["bù", "kān", "xuán", "bìn", "yǐng"],
+            "text": "不堪玄鬓影",
+            "start1": 12.2,
+            "stop1": 14.7,
+            "start2": 12.2,
+            "stop2": 18.1
+          },
+          {
+            "pinyi": ["lái", "duì", "bái", "tóu", "yín"],
+            "text": "来对白头吟",
+            "start1": 14.7,
+            "stop1": 18.1,
+            "start2": 12.3,
+            "stop2": 18.1
+          }
+        ]
+      },
+      {
+        "s": [
+          {
+            "pinyi": ["lù", "zhòng", "fēi", "nán", "jìn"],
+            "text": "露重飞难进",
+            "start1": 18.1,
+            "stop1": 21.2,
+            "start2": 18.1,
+            "stop2": 24.4
+          },
+          {
+            "pinyi": ["fēng", "duō", "xiǎng", "yì", "chén"],
+            "text": "风多响易沉",
+            "start1": 21.2,
+            "stop1": 24.4,
+            "start2": 18.1,
+            "stop2": 24.4
+          }
+        ]
+      },
+      {
+        "s": [
+          {
+            "pinyi": ["wú", "rén", "xìn", "gāo", "jié"],
+            "text": "无人信高洁",
+            "start1": 24.4,
+            "stop1": 26.55,
+            "start2": 24.4,
+            "stop2": 30.5
+          },
+          {
+            "pinyi": ["shuí", "wèi", "biǎo", "yú", "xīn"],
+            "text": "谁为表予心",
+            "start1": 26.55,
+            "stop1": 30.5,
+            "start2": 24.5,
+            "stop2": 30.5
+          }
+        ]
+      }
+    ]
+  }
+}

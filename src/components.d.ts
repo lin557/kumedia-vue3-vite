@@ -9,6 +9,7 @@ declare module '@vue/runtime-core' {
   export interface GlobalComponents {
     BaseBody: typeof import('./components/layouts/base-body.vue')['default']
     BaseHeader: typeof import('./components/layouts/base-header.vue')['default']
+    copy: typeof import('./components/videojs/vue3-player copy.vue')['default']
     ElCard: typeof import('element-plus/es')['ElCard']
     ElConfigProvider: typeof import('element-plus/es')['ElConfigProvider']
     ElEmpty: typeof import('element-plus/es')['ElEmpty']

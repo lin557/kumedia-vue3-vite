@@ -1,7 +1,11 @@
 <template>
   <div class="movie-container common-container">
     <div class="video-playbox">
-      <vd-player ref="playerRef" :poster="listJson.poster" />
+      <v3d-player
+        ref="playerRef"
+        :poster="listJson.poster"
+        @volumechange="handleVolumechange"
+      />
       <div class="video-list-m">
         <div class="video-title">{{ listJson.title }}</div>
         <div class="video-sub">{{ listJson.performer }}</div>
@@ -30,8 +34,9 @@
 import { onMounted, ref, reactive } from 'vue'
 import { useRoute } from 'vue-router'
 import { getMovieJson, MediaJson } from '~/api/media'
-// import Vue3player from '~/components/videojs/vue3-player.vue'
-import VdPlayer from '~/components/dplayer/vd-player.vue'
+import storage from '~/utils/storage'
+import V3dPlayer from 'v3d-player'
+import 'v3d-player/dist/style.css'
 
 let _listJson: MediaJson = {
   title: '',
@@ -59,11 +64,24 @@ const getJson = async (id: string) => {
   return await getMovieJson(id)
 }
 
-const playerRef = ref<InstanceType<typeof VdPlayer>>()
+const playerRef = ref<InstanceType<typeof V3dPlayer>>()
+
+/**
+ * 写入存储
+ */
+const handleVolumechange = () => {
+  let value = playerRef.value?.volume()
+  if (value === undefined) {
+    value = 0
+  }
+  storage.setVolume(value)
+}
 
 const play = (title: string, url: string) => {
   const opt = {
     src: url,
+    autoplay: true,
+    volume: storage.getVolume(),
   }
   activeIndex.value = title
   playInfo.title = listJson.title + ' (' + title + ')'

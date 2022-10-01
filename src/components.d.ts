@@ -9,7 +9,6 @@ declare module '@vue/runtime-core' {
   export interface GlobalComponents {
     BaseBody: typeof import('./components/layouts/base-body.vue')['default']
     BaseHeader: typeof import('./components/layouts/base-header.vue')['default']
-    copy: typeof import('./components/videojs/vue3-player copy.vue')['default']
     ElCard: typeof import('element-plus/es')['ElCard']
     ElConfigProvider: typeof import('element-plus/es')['ElConfigProvider']
     ElEmpty: typeof import('element-plus/es')['ElEmpty']
@@ -23,10 +22,6 @@ declare module '@vue/runtime-core' {
     RouterView: typeof import('vue-router')['RouterView']
     TangPlayer: typeof import('./components/tang-player.vue')['default']
     ThumbBox: typeof import('./components/thumb-box.vue')['default']
-    VdPlayer: typeof import('./components/dplayer/vd-player.vue')['default']
-    Vue3Player: typeof import('./components/videojs/vue3-player.vue')['default']
-    'Vue3Player copy': typeof import('./components/videojs/vue3-player copy.vue')['default']
-    VueMeplayer: typeof import('./components/media-element/vue-meplayer.vue')['default']
   }
   export interface ComponentCustomProperties {
     vLoading: typeof import('element-plus/es')['ElLoadingDirective']

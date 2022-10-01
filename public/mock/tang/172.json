@@ -1,0 +1,77 @@
+{
+  "code": "00000",
+  "msg": "ok",
+  "result": {
+    "id": 172,
+    "title": "宿石邑山中",
+    "audio": "//192.168.0.250/media/audio/唐诗三百首/172.mp3",
+    "node": "拼音参考书籍：《小学生经典诵读》 浙江古籍出版社，《古代汉语常用字字典》 商务印书馆 2017年版",
+    "link": "https://www.cngwzj.com/pygushi/TangDai/16990/",
+    "rows": [
+      {  
+        "s": [
+          {
+            "pinyi": ["sù", "shí", "yì", "shān", "zhōng"],
+            "text": "宿石邑山中",
+            "start1": 0,
+            "stop1": 999,
+            "start2": 0,
+            "stop2": 999
+          }
+        ]
+      },
+      {
+        "s": [
+          {
+            "pinyi": ["", "táng", "", "hán", "hóng"],
+            "text": "[唐]韩翃",
+            "start1": 0,
+            "stop1": 18.3,
+            "start2": 3.9,
+            "stop2": 18.3
+          }
+        ]
+      },
+      {
+        "s": [
+          {
+            "pinyi": ["fú", "yún", "bú", "gòng", "cǐ", "shān", "qí"],
+            "text": "浮云不共此山齐",
+            "start1": 3.9,
+            "stop1": 7.15,
+            "start2": 3.9,
+            "stop2": 10.9
+          },
+          {
+            "pinyi": ["shān", "ǎi", "cāng", "cāng", "wàng", "zhuǎn", "mí"],
+            "text": "山霭苍苍望转迷",
+            "start1": 7.15,
+            "stop1": 10.9,
+            "start2": 3.9,
+            "stop2": 10.9
+          }
+        ]
+      },
+      {
+        "s": [
+          {
+            "pinyi": ["xiǎo", "yuè", "zàn", "fēi", "gāo", "shù", "lǐ"],
+            "text": "晓月暂飞高树里",
+            "start1": 10.9,
+            "stop1": 14.1,
+            "start2": 10.9,
+            "stop2": 18.3
+          },
+          {
+            "pinyi": ["qiū", "hé", "gé", "zài", "shù", "fēng", "xī"],
+            "text": "秋河隔在数峰西",
+            "start1": 14.1,
+            "stop1": 18.3,
+            "start2": 10.9,
+            "stop2": 18.3
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "code": "00000",
+  "msg": "ok",
+  "result": {
+    "id": 175,
+    "title": "戏问花门酒家翁",
+    "audio": "//192.168.0.250/media/audio/唐诗三百首/175.mp3",
+    "node": "拼音参考书籍：《古代汉语常用字字典》 商务印书馆 2017年版",
+    "link": "https://www.cngwzj.com/pygushi/TangDai/14560/",
+    "rows": [
+      {  
+        "s": [
+          {
+            "pinyi": ["xì", "wèn", "huā", "mén", "jiǔ", "jiā", "wēng"],
+            "text": "戏问花门酒家翁",
+            "start1": 1.5,
+            "stop1": 999,
+            "start2": 1.5,
+            "stop2": 999
+          }
+        ]
+      },
+      {
+        "s": [
+          {
+            "pinyi": ["", "táng", "", "cén", "shēn"],
+            "text": "[唐]岑参",
+            "start1": 1.5,
+            "stop1": 19.8,
+            "start2": 6.0,
+            "stop2": 19.8
+          }
+        ]
+      },
+      {
+        "s": [
+          {
+            "pinyi": ["lǎo", "rén", "qī", "shí", "réng", "gū", "jiǔ"],
+            "text": "老人七十仍沽酒",
+            "start1": 6.0,
+            "stop1": 9.3,
+            "start2": 6.0,
+            "stop2": 12.7
+          },
+          {
+            "pinyi": ["qiān", "hú", "bǎi", "wèng", "huā", "mén", "kǒu"],
+            "text": "千壶百瓮花门口",
+            "start1": 9.3,
+            "stop1": 12.7,
+            "start2": 6.0,
+            "stop2": 12.7
+          }
+        ]
+      },
+      {
+        "s": [
+          {
+            "pinyi": ["dào", "páng", "yú", "jiá", "réng", "sì", "qián"],
+            "text": "道傍榆荚仍似钱",
+            "start1": 12.7,
+            "stop1": 15.9,
+            "start2": 12.7,
+            "stop2": 19.8
+          },
+          {
+            "pinyi": ["zhāi", "lái", "gū", "jiǔ", "jūn", "kěn", "fǒu"],
+            "text": "摘来沽酒君肯否",
+            "start1": 15.9,
+            "stop1": 19.8,
+            "start2": 12.7,
+            "stop2": 19.8
+          }
+        ]
+      }
+    ]
+  }
+}

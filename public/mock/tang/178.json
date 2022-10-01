@@ -1,0 +1,117 @@
+{
+  "code": "00000",
+  "msg": "ok",
+  "result": {
+    "id": 178,
+    "title": "送人赴安西",
+    "audio": "//192.168.0.250/media/audio/唐诗三百首/178.mp3",
+    "node": "",
+    "link": "https://www.cngwzj.com/gushi/TangDai/14419/",
+    "rows": [
+      {  
+        "s": [
+          {
+            "pinyi": ["sòng", "rén", "fù", "ān", "xī"],
+            "text": "送人赴安西",
+            "start1": 1.5,
+            "stop1": 999,
+            "start2": 1.5,
+            "stop2": 999
+          }
+        ]
+      },
+      {
+        "s": [
+          {
+            "pinyi": ["", "táng", "", "cén", "shēn"],
+            "text": "[唐]岑参",
+            "start1": 1.5,
+            "stop1": 28.2,
+            "start2": 6.0,
+            "stop2": 28.2
+          }
+        ]
+      },
+      {
+        "s": [
+          {
+            "pinyi": ["shàng", "mǎ", "dài", "wú", "gōu"],
+            "text": "上马带吴钩",
+            "start1": 6.0,
+            "stop1": 8.5,
+            "start2": 6.0,
+            "stop2": 11.5
+          },
+          {
+            "pinyi": ["piān", "piān", "dù", "lǒng", "tóu"],
+            "text": "翩翩度陇头",
+            "start1": 8.5,
+            "stop1": 11.5,
+            "start2": 6.0,
+            "stop2": 11.5
+          }
+        ]
+      },
+      {
+        "s": [
+          {
+            "pinyi": ["tóu", "lái", "sī", "bào", "guó"],
+            "text": "小来思报国",
+            "start1": 11.5,
+            "stop1": 13.9,
+            "start2": 11.5,
+            "stop2": 16.7
+          },
+          {
+            "pinyi": ["bú", "shì", "ài", "fēng", "hóu"],
+            "text": "不是爱封侯",
+            "start1": 13.9,
+            "stop1": 16.7,
+            "start2": 11.5,
+            "stop2": 16.7
+          }
+        ]
+      },
+      {
+        "s": [
+          {
+            "pinyi": ["wàn", "lǐ", "xiāng", "wèi", "mèng"],
+            "text": "万里乡为梦",
+            "start1": 16.7,
+            "stop1": 19.2,
+            "start2": 16.7,
+            "stop2": 22.0
+          },
+          {
+            "pinyi": ["sān", "biān", "yuè", "zuò", "chóu"],
+            "text": "三边月作愁",
+            "start1": 19.2,
+            "stop1": 22.0,
+            "start2": 16.7,
+            "stop2": 22.0
+          }
+        ]
+      },
+      {
+        "s": [
+          {
+            "pinyi": ["zǎo", "xū", "qīng", "xiá", "lǔ"],
+            "text": "早须清黠虏",
+            "start1": 22.0,
+            "stop1": 24.65,
+            "start2": 22.0,
+            "stop2": 28.2
+          },
+          {
+            "pinyi": ["wú", "shì", "mò", "jīng", "qiū"],
+            "text": "无事莫经秋",
+            "start1": 24.65,
+            "stop1": 28.2,
+            "start2": 22.0,
+            "stop2": 28.2
+          }
+        ]
+      }
+    ]
+  }
+}

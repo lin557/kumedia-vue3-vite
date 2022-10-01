@@ -1,0 +1,77 @@
+{
+  "code": "00000",
+  "msg": "ok",
+  "result": {
+    "id": 176,
+    "title": "山房春事（其二）",
+    "audio": "//192.168.0.250/media/audio/唐诗三百首/176.mp3",
+    "node": "拼音参考书籍：《古代汉语常用字字典》 商务印书馆 2017年版*",
+    "link": "https://www.cngwzj.com/pygushi/TangDai/14551/",
+    "rows": [
+      {  
+        "s": [
+          {
+            "pinyi": ["shān", "fáng", "chūn", "shì", "", "qí", "èr", ""],
+            "text": "山房春事（其二）",
+            "start1": 0.3,
+            "stop1": 999,
+            "start2": 0.3,
+            "stop2": 999
+          }
+        ]
+      },
+      {
+        "s": [
+          {
+            "pinyi": ["", "táng", "", "cén", "shēn"],
+            "text": "[唐]岑参",
+            "start1": 0.3,
+            "stop1": 17.4,
+            "start2": 4.8,
+            "stop2": 17.4
+          }
+        ]
+      },
+      {
+        "s": [
+          {
+            "pinyi": ["liáng", "yuán", "rì", "mù", "luàn", "fēi", "yā"],
+            "text": "梁园日暮乱飞鸦",
+            "start1": 4.8,
+            "stop1": 8.0,
+            "start2": 4.8,
+            "stop2": 10.9
+          },
+          {
+            "pinyi": ["jí", "mù", "xiāo", "tiáo", "sān", "liǎng", "jiā"],
+            "text": "极目萧条三两家",
+            "start1": 8.0,
+            "stop1": 10.9,
+            "start2": 4.8,
+            "stop2": 10.9
+          }
+        ]
+      },
+      {
+        "s": [
+          {
+            "pinyi": ["tíng", "shù", "bù", "zhī", "rén", "qù", "jìn"],
+            "text": "庭树不知人去尽",
+            "start1": 10.9,
+            "stop1": 13.3,
+            "start2": 10.9,
+            "stop2": 17.4
+          },
+          {
+            "pinyi": ["chūn", "lái", "hái", "fā", "jiù", "shí", "huā"],
+            "text": "春来还发旧时花",
+            "start1": 13.3,
+            "stop1": 17.4,
+            "start2": 10.9,
+            "stop2": 17.4
+          }
+        ]
+      }
+    ]
+  }
+}

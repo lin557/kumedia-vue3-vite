@@ -88,7 +88,6 @@ defineExpose({
 <style lang="scss">
 .tang-player {
   text-align: center;
-  margin-bottom: 80px;
 
   .tang-row {
     margin: 3px 0;

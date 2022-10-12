@@ -1,12 +1,17 @@
 <template>
-  <tang-player ref="tangRef" />
+  <div>
+    <tang-player ref="tangRef" />
+    <div>上一首</div>
+    <div>下一首</div>
+  </div>
 </template>
 <script setup lang="ts">
 import { onMounted, reactive, ref } from 'vue'
 import { useRoute } from 'vue-router'
 import { getTangJson, TangJson } from '~/api/tang'
+import TangPlayer from '~/components/tang-player.vue'
 
-const tangRef = ref()
+const tangRef = ref<InstanceType<typeof TangPlayer>>()
 
 let listJson: TangJson = reactive({
   title: '',

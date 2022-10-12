@@ -1,0 +1,16 @@
+{
+  "code": "00000",
+  "msg": "ok",
+  "result": {
+    "id": "5",
+    "title": "阿凡达",
+    "performer": " 萨姆·沃辛顿 / 佐伊·索尔达娜 / 西格妮·韦弗 / 史蒂芬·朗 / 米歇尔·罗德里格",
+    "poster": "//192.168.0.250/media/movie/阿凡达/poster.webp",
+    "episodes": [
+      {
+        "title": "国英双语",
+        "url": "//192.168.0.250/media/movie/阿凡达/[BD影视分享bd2020.com]Avatar.2009.加长版.BD720P.国英双语.中英双字.mp4"
+      }
+    ]
+  }
+}

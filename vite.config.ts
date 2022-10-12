@@ -14,8 +14,7 @@ import {
 import eslintPlugin from 'vite-plugin-eslint'
 
 // https://vitejs.dev/config/
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-export default defineConfig(({ command, mode, ssrBuild }) => {
+export default defineConfig(({ command, mode }) => {
   const pathSrc = path.resolve(__dirname, 'src')
   const env = loadEnv(mode, __dirname)
   return {
@@ -48,8 +47,14 @@ export default defineConfig(({ command, mode, ssrBuild }) => {
             if (id.includes('element-plus')) {
               return 'element-plus'
             }
-            if (id.includes('videojs') || id.includes('video.js')) {
-              return 'videojs'
+            if (id.includes('flv.js')) {
+              return 'flv'
+            }
+            if (id.includes('hls.js')) {
+              return 'hls'
+            }
+            if (id.includes('v3d-player')) {
+              return 'v3d-player'
             }
             // if (id.includes('node_modules')) {
             //   return 'vendor'

@@ -4,6 +4,7 @@
       <v3d-player
         ref="playerRef"
         :poster="listJson.poster"
+        :prototype="{}"
         @volumechange="handleVolumechange"
       />
       <div class="video-list-m">
@@ -82,6 +83,7 @@ const play = (title: string, url: string) => {
     src: url,
     autoplay: true,
     volume: storage.getVolume(),
+    screenshot: true,
   }
   activeIndex.value = title
   playInfo.title = listJson.title + ' (' + title + ')'

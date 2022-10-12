@@ -1,0 +1,16 @@
+{
+  "code": "00000",
+  "msg": "ok",
+  "result": {
+    "id": "4",
+    "title": "我不是药神",
+    "performer": "徐峥 周一围 王传君 谭卓 章宇 杨新鸣",
+    "poster": "//192.168.0.250/media/movie/我不是药神/poster.webp",
+    "episodes": [
+      {
+        "title": "国语",
+        "url": "//192.168.0.250/media/movie/我不是药神/[电影天堂www.dy2018.com]我不是药神BD国语中字.mp4"
+      }
+    ]
+  }
+}

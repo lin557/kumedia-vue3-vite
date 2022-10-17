@@ -31,10 +31,10 @@ const thumbProps = defineProps({
         sub: '',
         status: '',
         thumb: '',
-        path: '',
+        path: ''
       }
-    },
-  },
+    }
+  }
 })
 </script>
 

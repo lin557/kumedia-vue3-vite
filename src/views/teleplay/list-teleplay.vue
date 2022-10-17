@@ -22,7 +22,7 @@ const prefixInteger = (num: number, length: number) => {
 
 let _listJson: MdeiaList = {
   total: 0,
-  rows: [],
+  rows: []
 }
 
 let listJson = reactive(_listJson)
@@ -35,14 +35,14 @@ const getJson = async () => {
 onMounted(() => {
   loading.value = true
   getJson()
-    .then((res) => {
+    .then(res => {
       listJson.total = res.result.total
       listJson.rows.length = 0
       listJson.rows.push(...res.result.rows)
       // console.log(res.result)
       loading.value = false
     })
-    .catch((err) => {
+    .catch(err => {
       console.log(err)
       loading.value = false
     })

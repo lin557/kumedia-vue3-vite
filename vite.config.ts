@@ -78,7 +78,16 @@ export default defineConfig(({ command, mode }) => {
     },
     plugins: [
       vue(),
-      eslintPlugin,
+      eslintPlugin({
+        include: [
+          'src/**/*.js',
+          'src/**/*.vue',
+          'src/**/*.ts',
+          'src/*.js',
+          'src/*.vue',
+          'src/*.ts',
+        ],
+      }),
       splitVendorChunkPlugin(),
       Components({
         // allow auto load markdown components under `./src/components/`

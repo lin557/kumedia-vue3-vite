@@ -16,7 +16,7 @@ const tangRef = ref<InstanceType<typeof TangPlayer>>()
 let listJson: TangJson = reactive({
   title: '',
   audio: '',
-  rows: [],
+  rows: []
 })
 
 const getJson = async (id: string) => {
@@ -32,7 +32,7 @@ onMounted(() => {
   } else {
     id = idParam[0]
   }
-  getJson(id).then((res) => {
+  getJson(id).then(res => {
     listJson.title = res.result.title
     listJson.audio = res.result.audio
     listJson.rows.length = 0

@@ -1,4 +1,5 @@
 import axios from '~/utils/vue-http'
+// eslint-disable-next-line @typescript-eslint/no-namespace
 namespace Login {
   // 用户登录表单
   export interface LoginReqForm {

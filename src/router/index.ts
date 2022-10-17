@@ -8,7 +8,7 @@ const routes: Array<RouteRecordRaw> = [
   {
     path: '/:pathMatch(.*)*',
     name: '404',
-    component: () => import('~/views/error/404.vue'),
+    component: () => import('~/views/error/404.vue')
   },
   {
     path: '/',
@@ -16,75 +16,75 @@ const routes: Array<RouteRecordRaw> = [
     component: Layout,
     redirect: '/tang',
     meta: {
-      title: '首页',
+      title: '首页'
     },
     children: [
       {
         path: '404',
         component: () => import('~/views/error/404.vue'),
         meta: {
-          title: '404',
-        },
+          title: '404'
+        }
       },
       {
         path: 'index',
         component: () => import('~/views/home-view.vue'),
         meta: {
-          title: '索引',
-        },
+          title: '索引'
+        }
       },
       {
         path: 'tang',
         component: () => import('~/views/tang/list-tang.vue'),
         meta: {
-          title: '唐诗',
-        },
+          title: '唐诗'
+        }
       },
       {
         path: 'tang/:id',
         component: () => import('~/views/tang/view-tang.vue'),
         meta: {
           title: '唐诗',
-          parent: '/tang',
-        },
+          parent: '/tang'
+        }
       },
       {
         path: 'teleplay',
         component: () => import('~/views/teleplay/list-teleplay.vue'),
         meta: {
-          title: '电视',
-        },
+          title: '电视'
+        }
       },
       {
         path: 'teleplay/:id',
         component: () => import('~/views/teleplay/view-teleplay.vue'),
         meta: {
           title: '电视',
-          parent: '/teleplay',
-        },
+          parent: '/teleplay'
+        }
       },
       {
         path: 'movie',
         component: () => import('~/views/movie/list-movie.vue'),
         meta: {
-          title: '电影',
-        },
+          title: '电影'
+        }
       },
       {
         path: 'movie/:id',
         component: () => import('~/views/movie/view-movie.vue'),
         meta: {
           title: '电影',
-          parent: '/movie',
-        },
-      },
-    ],
-  },
+          parent: '/movie'
+        }
+      }
+    ]
+  }
 ]
 
 const router = createRouter({
   history: createWebHashHistory(),
-  routes,
+  routes
 })
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars

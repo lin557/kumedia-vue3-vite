@@ -30,17 +30,17 @@ const data = reactive({
   menu: [
     {
       title: '电影',
-      index: '/movie',
+      index: '/movie'
     },
     {
       title: '电视',
-      index: '/teleplay',
+      index: '/teleplay'
     },
     {
       title: '唐诗',
-      index: '/tang',
-    },
-  ],
+      index: '/tang'
+    }
+  ]
 })
 let activeIndex = ref('/')
 const route = useRoute()
@@ -61,7 +61,7 @@ watch(
     deep: true,
     // 值为true的话，就消除了惰性，watch会在创建后立即执行一次
     // 那么首次执行，val为默认值,preVal为undefined
-    immediate: true,
+    immediate: true
   }
 )
 

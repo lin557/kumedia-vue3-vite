@@ -47,7 +47,7 @@ let stopTime = MAX_DURATION
 let _dataJson: TangJson = {
   title: '',
   audio: '',
-  rows: [],
+  rows: []
 }
 
 let dataTang = reactive(_dataJson)
@@ -81,7 +81,7 @@ const handlePause = () => {
 }
 
 defineExpose({
-  play,
+  play
 })
 </script>
 

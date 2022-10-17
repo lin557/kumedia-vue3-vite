@@ -43,11 +43,11 @@ let _listJson: MediaJson = {
   title: '',
   poster: '',
   performer: '',
-  episodes: [],
+  episodes: []
 }
 let listJson = reactive(_listJson)
 let playInfo = reactive({
-  title: '',
+  title: ''
 })
 
 let activeIndex = ref('')
@@ -83,7 +83,7 @@ const play = (title: string, url: string) => {
     src: url,
     autoplay: true,
     volume: storage.getVolume(),
-    screenshot: true,
+    screenshot: true
   }
   activeIndex.value = title
   playInfo.title = listJson.title + ' (' + title + ')'
@@ -112,7 +112,7 @@ onMounted(() => {
   } else {
     id = idParam[0]
   }
-  getJson(id).then((res) => {
+  getJson(id).then(res => {
     listJson.title = res.result.title
     listJson.poster = res.result.poster
     listJson.performer = res.result.performer

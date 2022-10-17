@@ -14,7 +14,7 @@ NProgress.configure({
   // 更改启动时使用的最小百分比
   minimum: 0.3,
   // 指定进度条的父容器
-  parent: 'body',
+  parent: 'body'
 })
 
 // 打开进度条

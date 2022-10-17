@@ -17,5 +17,5 @@ export default {
   },
   setVolume(vol: number) {
     this.setItem(volume, vol.toString())
-  },
+  }
 }

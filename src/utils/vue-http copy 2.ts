@@ -50,7 +50,7 @@ class AxiosHttpRequest implements BaseType {
     const config = {
       baseURL: this.baseURL,
       timeout: this.timeout,
-      headers: {},
+      headers: {}
     }
     return config
   }
@@ -61,7 +61,7 @@ class AxiosHttpRequest implements BaseType {
       (config: AxiosRequestType) => {
         // 取消重复请求
         removeSource(config)
-        config.cancelToken = new CancelToken((c) => {
+        config.cancelToken = new CancelToken(c => {
           // 将取消函数存起来
           sources.push({ umet: config.url + '&' + config.method, cancel: c })
         })
@@ -143,7 +143,7 @@ class AxiosHttpRequest implements BaseType {
         }
         ElMessage.error({
           message: message,
-          duration: 5 * 1000,
+          duration: 5 * 1000
         })
         return Promise.reject(error)
       }

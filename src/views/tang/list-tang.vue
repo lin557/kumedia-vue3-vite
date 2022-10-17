@@ -34,7 +34,7 @@ const router = useRouter()
 
 let _listJson: TangList = {
   total: 0,
-  rows: [],
+  rows: []
 }
 
 let listJson = reactive(_listJson)
@@ -64,21 +64,21 @@ const rowsToList = (...items: Array<TangItem>) => {
   out.sort(compare)
   let ret: TangItem = {
     author: '唐诗三百首',
-    works: out,
+    works: out
   }
   return ret
 }
 
 const handleClick = (work: TangWork) => {
   router.push({
-    path: work.path,
+    path: work.path
   })
 }
 
 onMounted(() => {
   loading.value = false
   getJson()
-    .then((res) => {
+    .then(res => {
       listJson.total = res.result.total
       listJson.rows.length = 0
       const list = rowsToList(...res.result.rows)
@@ -87,7 +87,7 @@ onMounted(() => {
       // console.log(res.result)
       loading.value = false
     })
-    .catch((err) => {
+    .catch(err => {
       console.log(err)
       loading.value = false
     })

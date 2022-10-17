@@ -4,7 +4,7 @@ import axios, {
   AxiosInstance,
   AxiosError,
   AxiosRequestConfig,
-  AxiosResponse,
+  AxiosResponse
 } from 'axios'
 import { ElMessage } from 'element-plus'
 import {
@@ -12,7 +12,7 @@ import {
   ERROR_CLIENT_LOGGIN_PASSWORD,
   ERROR_CLIENT_ACCESS_EXPIRED,
   ERROR_SERVICE_DB_DUPLICATEKEY,
-  ERROR_CLIENT_USER_PASSWORD_VERIFICATION_FAILED,
+  ERROR_CLIENT_USER_PASSWORD_VERIFICATION_FAILED
 } from '~/utils/vue-code'
 // 数据返回的接口
 // 定义请求响应参数，不含data
@@ -30,7 +30,7 @@ enum RequestEnums {
   TIMEOUT = 20000,
   OVERDUE = 600, // 登录失效
   FAIL = 999, // 请求失败
-  SUCCESS = 200, // 请求成功
+  SUCCESS = 200 // 请求成功
 }
 const config = {
   // 默认地址
@@ -38,7 +38,7 @@ const config = {
   // 设置超时时间
   timeout: RequestEnums.TIMEOUT as number,
   // 跨域时候允许携带凭证
-  withCredentials: true,
+  withCredentials: true
 }
 
 class RequestHttp {
@@ -59,8 +59,8 @@ class RequestHttp {
         return {
           ...config,
           headers: {
-            'x-access-token': token, // 请求头中携带token信息
-          },
+            'x-access-token': token // 请求头中携带token信息
+          }
         }
       },
       (error: AxiosError) => {
@@ -86,7 +86,7 @@ class RequestHttp {
           ElMessage.error({
             message: data.msg || 'Error',
             type: 'error',
-            duration: 5 * 1000,
+            duration: 5 * 1000
           })
         }
         // if (data.code === RequestEnums.OVERDUE) {

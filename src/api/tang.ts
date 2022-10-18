@@ -32,7 +32,8 @@ export interface TangRows {
 
 export interface TangJson {
   title: string
-  audio: string
+  audio?: string | undefined
+  video?: string | undefined
   rows: Array<TangRows>
 }
 

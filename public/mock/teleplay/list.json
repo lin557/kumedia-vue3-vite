@@ -59,7 +59,7 @@
         "path": "/teleplay/6",
         "title": "简言的夏冬",
         "sub": "朱亚文、万茜演绎攻系情侣",
-        "status": "更新到42集",
+        "status": "49集全",
         "age": 2022,
         "cover": "//192.168.0.250/media/teleplay/简言的夏冬/cover.jpg",
         "thumb": "//192.168.0.250/media/teleplay/简言的夏冬/thumb.jpg"
@@ -73,6 +73,16 @@
         "age": 2022,
         "cover": "//192.168.0.250/media/teleplay/天盛长歌/cover.jpg",
         "thumb": "//192.168.0.250/media/teleplay/天盛长歌/thumb.jpg"
+      },
+      {
+        "id": 8,
+        "path": "/teleplay/8",
+        "title": "长安十二时辰",
+        "sub": "雷佳音 / 易烊千玺 / 周一围 / 芦芳生 / 热依扎",
+        "status": "48集全",
+        "age": 2019,
+        "cover": "//192.168.0.250/media/teleplay/长安十二时辰/cover.jpg",
+        "thumb": "//192.168.0.250/media/teleplay/长安十二时辰/thumb.jpg"
       }
     ]
   }

@@ -1,0 +1,16 @@
+{
+  "code": "00000",
+  "msg": "ok",
+  "result": {
+    "id": "9",
+    "title": "赌侠2之上海滩赌圣",
+    "performer": "周星驰 / 巩俐 / 吕良伟 / 向华强 / 吴君如",
+    "poster": "//192.168.0.250/media/movie/赌侠/poster2.webp",
+    "episodes": [
+      {
+        "title": "粤语",
+        "url": "//192.168.0.250/media/movie/赌侠/赌侠2.God.of.Gamblers.III.1991.BD720P.X264.AAC.Cantonese&Mandarin.CHS.Mp4Ba.mp4"
+      }
+    ]
+  }
+}

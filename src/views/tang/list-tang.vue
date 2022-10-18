@@ -87,7 +87,7 @@ onMounted(() => {
       // console.log(res.result)
       loading.value = false
     })
-    .catch(err => {
+    .catch((err: unknown) => {
       console.log(err)
       loading.value = false
     })
@@ -101,6 +101,8 @@ onMounted(() => {
 
   .ep-card {
     margin-bottom: 10px;
+    margin-left: 8px;
+    margin-right: 8px;
     width: 100%;
     .ep-card__body {
       padding: 10px;
@@ -111,11 +113,12 @@ onMounted(() => {
   .tang-item {
     margin: 5px;
     padding: 7px 5px;
+    box-sizing: border-box;
     // width: 228px;
     display: inline-block;
-    border: 1px solid var(--ep-color-primary-light-7);
+    border: var(--ep-border);
     border-radius: 5px;
-    color: var(--ep-menu-active-color);
+    color: var(--ep-text-color-primary);
     cursor: pointer;
 
     span {
@@ -143,7 +146,8 @@ onMounted(() => {
   }
 
   .tang-item:hover {
-    background-color: var(--ep-color-primary-light-9);
+    color: var(--ep-color-warning);
+    background-color: var(--ep-color-warning-light-9);
   }
 }
 </style>

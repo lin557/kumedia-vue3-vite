@@ -1,5 +1,5 @@
 <template>
-  <div v-loading="loading" class="movie-container common-container">
+  <div v-loading="loading" class="movie-list common-container">
     <el-empty
       v-if="listJson.rows.length === 0 && loading == false"
       description="无数据"
@@ -50,7 +50,7 @@ onMounted(() => {
 </script>
 
 <style lang="scss">
-.movie-container {
+.movie-list {
   padding-top: 16px;
 }
 </style>

@@ -8,7 +8,7 @@
         "id": 1,
         "path": "/movie/1",
         "title": "影",
-        "sub": "邓超 孙俪 郑恺 王千源 王景春 胡军 关晓彤 吴磊",
+        "sub": "张艺谋的水墨画风",
         "status": "豆瓣 7.2",
         "age": 2018,
         "thumb": "//192.168.0.250/media/movie/影/thumb.jpg"
@@ -25,17 +25,17 @@
       {
         "id": 3,
         "path": "/movie/3",
-        "title": "龙虎门 龍虎門",
-        "sub": "黄玉郎同名漫画改编",
-        "status": "豆瓣 5.9",
-        "age": 2006,
-        "thumb": "//192.168.0.250/media/movie/龙虎门/thumb.jpg"
+        "title": "让子弹飞",
+        "sub": "让子弹飞一会",
+        "status": "豆瓣 9.0",
+        "age": 2010,
+        "thumb": "//192.168.0.250/media/movie/让子弹飞/thumb.jpg"
       },
       {
         "id": 4,
         "path": "/movie/4",
         "title": "我不是药神",
-        "sub": "改编自陆勇代购抗癌药的真实事迹",
+        "sub": "徐峥佳作推动医改",
         "status": "豆瓣 9.0",
         "age": 2018,
         "thumb": "//192.168.0.250/media/movie/我不是药神/thumb.jpg"
@@ -52,11 +52,11 @@
       {
         "id": 6,
         "path": "/movie/6",
-        "title": "倚天屠龙记之魔教教主",
-        "sub": "李连杰仗义救明教",
-        "status": "豆瓣 7.9",
-        "age": 1993,
-        "thumb": "//192.168.0.250/media/movie/倚天屠龙记之魔教教主/thumb.jpg"
+        "title": "红海行动",
+        "sub": "蛟龙出击扬我国威",
+        "status": "豆瓣 8.2",
+        "age": 2018,
+        "thumb": "//192.168.0.250/media/movie/红海行动/thumb.jpg"
       },
       {
         "id": 7,
@@ -64,8 +64,26 @@
         "title": "青蛇",
         "sub": "蛇妖姐妹深陷情网",
         "status": "豆瓣 8.6",
-        "age": 2009,
+        "age": 1993,
         "thumb": "//192.168.0.250/media/movie/青蛇/thumb.jpg"
+      },
+      {
+        "id": 8,
+        "path": "/movie/8",
+        "title": "赌侠1",
+        "sub": "华仔星爷赌桌对垒",
+        "status": "豆瓣 7.9",
+        "age": 1990,
+        "thumb": "//192.168.0.250/media/movie/赌侠/thumb1.jpg"
+      },
+      {
+        "id": 9,
+        "path": "/movie/9",
+        "title": "赌侠2之上海滩赌圣",
+        "sub": "星爷穿越恋巩皇",
+        "status": "豆瓣 7.7",
+        "age": 1991,
+        "thumb": "//192.168.0.250/media/movie/赌侠/thumb2.jpg"
       }
     ]
   }

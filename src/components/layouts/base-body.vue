@@ -49,9 +49,8 @@ watch(
 
 <style lang="scss">
 .base-body {
-  height: calc(100% - 60px);
+  height: calc(100% - var(--km-narbar-height));
   overflow-y: hidden;
-  background-color: var(--ep-color-success-light-9);
 
   .ep-scrollbar__bar.is-horizontal {
     display: none;

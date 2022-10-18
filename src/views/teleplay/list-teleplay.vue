@@ -1,5 +1,5 @@
 <template>
-  <div v-loading="loading" class="teleplay-container common-container">
+  <div v-loading="loading" class="media-list common-container">
     <el-empty
       v-if="listJson.rows.length === 0 && loading == false"
       description="无数据"
@@ -50,7 +50,7 @@ onMounted(() => {
 </script>
 
 <style lang="scss">
-.teleplay-container {
+.media-list {
   padding-top: 15px;
 }
 </style>

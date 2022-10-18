@@ -1,0 +1,16 @@
+{
+  "code": "00000",
+  "msg": "ok",
+  "result": {
+    "id": "7",
+    "title": "青蛇",
+    "performer": "张曼玉 / 王祖贤 / 赵文卓 / 吴兴国 / 马精",
+    "poster": "//192.168.0.250/media/movie/青蛇/poster.webp",
+    "episodes": [
+      {
+        "title": "国语",
+        "url": "//192.168.0.250/media/movie/青蛇/青蛇(蓝光国粤双音轨中文字幕).Green.Snake.1993.BD-1080p.X264.AAC5.1.2AUDIOS.CHS-UUMp4.mp4"
+      }
+    ]
+  }
+}

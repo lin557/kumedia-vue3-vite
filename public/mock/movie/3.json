@@ -3,13 +3,13 @@
   "msg": "ok",
   "result": {
     "id": "3",
-    "title": "龙虎门",
-    "performer": "甄子丹 谢霆锋 余文乐 董洁 李小冉 陈观泰 古天乐 元华 释彦能",
-    "poster": "//192.168.0.250/media/movie/龙虎门/poster.webp",
+    "title": "让子弹飞",
+    "performer": "姜文 / 葛优 / 周润发 / 刘嘉玲 / 陈坤",
+    "poster": "//192.168.0.250/media/movie/让子弹飞/poster.webp",
     "episodes": [
       {
-        "title": "粤语",
-        "url": "//192.168.0.250/media/movie/龙虎门/龙虎门-2006_蓝光国粤双语中字.mp4"
+        "title": "国语",
+        "url": "//192.168.0.250/media/movie/让子弹飞/让子弹飞.Let.The.Bullets.Fly.2010.BD720P.国川双语.高清中字.mp4"
       }
     ]
   }

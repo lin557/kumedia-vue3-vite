@@ -1,8 +1,6 @@
 <template>
   <div>
     <tang-player ref="tangRef" />
-    <div>上一首</div>
-    <div>下一首</div>
   </div>
 </template>
 <script setup lang="ts">
@@ -16,6 +14,7 @@ const tangRef = ref<InstanceType<typeof TangPlayer>>()
 let listJson: TangJson = reactive({
   title: '',
   audio: '',
+  video: '',
   rows: []
 })
 
@@ -35,6 +34,7 @@ onMounted(() => {
   getJson(id).then(res => {
     listJson.title = res.result.title
     listJson.audio = res.result.audio
+    listJson.video = res.result.video
     listJson.rows.length = 0
     listJson.rows.push(...res.result.rows)
     tangRef.value?.play(listJson)

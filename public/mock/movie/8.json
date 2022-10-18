@@ -1,0 +1,16 @@
+{
+  "code": "00000",
+  "msg": "ok",
+  "result": {
+    "id": "8",
+    "title": "赌侠1",
+    "performer": "刘德华 / 周星驰 / 向华强 / 张敏 / 吴孟达",
+    "poster": "//192.168.0.250/media/movie/赌侠/poster1.webp",
+    "episodes": [
+      {
+        "title": "粤语",
+        "url": "//192.168.0.250/media/movie/赌侠/赌侠1.God.of.Gamblers.II.1990.BD720P.X264.AAC.Cantonese&Mandarin.CHS.Mp4Ba.mp4"
+      }
+    ]
+  }
+}

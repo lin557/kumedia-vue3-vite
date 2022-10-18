@@ -9,7 +9,7 @@ import {
   presetIcons,
   presetUno,
   transformerDirectives,
-  transformerVariantGroup,
+  transformerVariantGroup
 } from 'unocss'
 import eslintPlugin from 'vite-plugin-eslint'
 
@@ -20,19 +20,19 @@ export default defineConfig(({ command, mode }) => {
   return {
     resolve: {
       alias: {
-        '~/': `${pathSrc}/`,
-      },
+        '~/': `${pathSrc}/`
+      }
     },
     css: {
       preprocessorOptions: {
         scss: {
-          additionalData: `@use "~/styles/element/index.scss" as *;`,
-        },
-      },
+          additionalData: `@use "~/styles/element/index.scss" as *;`
+        }
+      }
     },
     server: {
       // 让本地ip可以访问
-      host: '0.0.0.0',
+      host: '0.0.0.0'
     },
     // 打包后可以直接打开
     base: env.VITE_MODE === 'production' ? './' : './',
@@ -72,22 +72,13 @@ export default defineConfig(({ command, mode }) => {
           entryFileNames: 'js/[name].[hash].js',
           // 用于输出静态资源的命名，[ext]表示文件扩展名
           chunkFileNames: 'js/[name].[hash].js',
-          assetFileNames: '[ext]/[name].[hash].[ext]',
-        },
-      },
+          assetFileNames: '[ext]/[name].[hash].[ext]'
+        }
+      }
     },
     plugins: [
       vue(),
-      eslintPlugin({
-        include: [
-          'src/**/*.js',
-          'src/**/*.vue',
-          'src/**/*.ts',
-          'src/*.js',
-          'src/*.vue',
-          'src/*.ts',
-        ],
-      }),
+      eslintPlugin(),
       splitVendorChunkPlugin(),
       Components({
         // allow auto load markdown components under `./src/components/`
@@ -96,10 +87,10 @@ export default defineConfig(({ command, mode }) => {
         include: [/\.vue$/, /\.vue\?vue/, /\.md$/],
         resolvers: [
           ElementPlusResolver({
-            importStyle: 'sass',
-          }),
+            importStyle: 'sass'
+          })
         ],
-        dts: 'src/components.d.ts',
+        dts: 'src/components.d.ts'
       }), // https://github.com/antfu/unocss
       // see unocss.config.ts for config
       Unocss({
@@ -108,11 +99,11 @@ export default defineConfig(({ command, mode }) => {
           presetAttributify(),
           presetIcons({
             scale: 1.2,
-            warn: true,
-          }),
+            warn: true
+          })
         ],
-        transformers: [transformerDirectives(), transformerVariantGroup()],
-      }),
-    ],
+        transformers: [transformerDirectives(), transformerVariantGroup()]
+      })
+    ]
   }
 })

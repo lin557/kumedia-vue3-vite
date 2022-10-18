@@ -1,104 +1,78 @@
 <template>
-  <el-header class="navbar">
-    <div class="navbar-wrapper">
-      <el-menu
-        router
-        :default-active="activeIndex"
-        mode="horizontal"
-        :ellipsis="false"
-        @select="handleSelect"
-      >
-        <el-menu-item index="/">首页</el-menu-item>
-        <div class="flex-grow" />
-        <el-menu-item
-          v-for="item in data.menu"
-          :key="item.index"
-          :index="item.index"
-        >
-          {{ item.title }}
-        </el-menu-item>
-      </el-menu>
+  <div class="navbar">
+    <div v-for="(item, index) in data.menu" :key="index" :class="item.cls">
+      <router-link v-if="item.path !== ''" :to="item.path">
+        {{ item.title }}
+      </router-link>
     </div>
-  </el-header>
+  </div>
 </template>
 
 <script lang="ts" setup>
-import { ref, reactive, watch } from 'vue'
-import { useRoute } from 'vue-router'
+import { reactive } from 'vue'
 
 const data = reactive({
   menu: [
     {
+      title: '首页',
+      path: '/',
+      cls: 'navbar-item'
+    },
+    {
+      title: '',
+      path: '',
+      cls: 'navbar-grow'
+    },
+    {
       title: '电影',
-      index: '/movie'
+      path: '/movie',
+      cls: 'navbar-item'
     },
     {
       title: '电视',
-      index: '/teleplay'
+      path: '/teleplay',
+      cls: 'navbar-item'
     },
     {
       title: '唐诗',
-      index: '/tang'
+      path: '/tang',
+      cls: 'navbar-item'
     }
   ]
 })
-let activeIndex = ref('/')
-const route = useRoute()
-
-watch(
-  () => route,
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  (val, preVal) => {
-    if (JSON.stringify(route.params) === '{}') {
-      activeIndex.value = route.path
-    } else {
-      activeIndex.value = route.meta.parent as string
-    }
-  },
-  {
-    // 这个参数代表监听对象时，可以监听深度嵌套的对象属性
-    // 比如message是一个对象的话，可以监听到message.a.b.c，也就是message下的所有属性
-    deep: true,
-    // 值为true的话，就消除了惰性，watch会在创建后立即执行一次
-    // 那么首次执行，val为默认值,preVal为undefined
-    immediate: true
-  }
-)
-
-const handleSelect = (key: string, keyPath: string[]) => {
-  let test = false
-  if (test) {
-    console.log(key, keyPath)
-  }
-}
 </script>
 
 <style lang="scss">
-.flex-grow {
-  flex-grow: 1;
-}
 .navbar {
   top: 0;
   left: 0;
   position: relative;
   padding: 0;
-  height: 59px;
+  height: var(--km-narbar-height);
   overflow: hidden;
+  display: flex;
+  font-size: 14px;
+  box-sizing: border-box;
+  border-bottom: var(--ep-border);
+  box-shadow: var(--ep-box-shadow-light);
 
-  .navbar-wrapper {
-    position: relative;
-    background-color: var(--vt-c-bg);
-    border-bottom: 1px solid var(--ep-menu-border-color);
-    height: 58px;
-    white-space: nowrap;
-    transition: border-color 0.5s, background-color 0.5s;
+  .navbar-item {
+    display: inline-flex;
 
-    .ep-menu--horizontal {
-      width: 960px;
-      margin: 0 auto;
-      transition: width 0.5s;
-      height: 59px;
+    a {
+      line-height: var(--km-narbar-height);
+      padding: 0 16px;
+      transition: background-color 0.3s;
     }
+
+    .router-link-exact-active {
+      color: var(--ep-color-warning) !important;
+      border-bottom: 2px solid var(--ep-color-warning);
+    }
+  }
+
+  .navbar-grow {
+    flex-grow: 1;
   }
 }
 </style>

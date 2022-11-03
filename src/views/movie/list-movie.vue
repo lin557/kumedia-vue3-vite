@@ -1,15 +1,18 @@
 <template>
-  <div v-loading="loading" class="movie-list common-container">
-    <el-empty
-      v-if="listJson.rows.length === 0 && loading == false"
-      description="无数据"
-    />
-    <template v-for="item in listJson.rows" :key="item.id">
-      <div class="g-col">
-        <thumb-box :info="item" />
-      </div>
-    </template>
-  </div>
+  <el-scrollbar height="100%">
+    <div v-loading="loading" class="movie-list common-container">
+      <el-empty
+        v-if="listJson.rows.length === 0 && loading == false"
+        description="无数据"
+      />
+
+      <template v-for="item in listJson.rows" :key="item.id">
+        <div class="g-col">
+          <thumb-box :info="item" />
+        </div>
+      </template>
+    </div>
+  </el-scrollbar>
 </template>
 <script lang="ts" setup>
 import { onMounted, ref, reactive } from 'vue'
@@ -39,7 +42,7 @@ onMounted(() => {
       listJson.total = res.result.total
       listJson.rows.length = 0
       listJson.rows.push(...res.result.rows)
-      // console.log(res.result)
+      console.log(res.result)
       loading.value = false
     })
     .catch(err => {
@@ -51,6 +54,6 @@ onMounted(() => {
 
 <style lang="scss">
 .movie-list {
-  padding-top: 16px;
+  padding: 10px 5px;
 }
 </style>

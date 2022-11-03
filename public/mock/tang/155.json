@@ -8,69 +8,47 @@
     "node": "拼音参考书籍：《古代汉语常用字字典》 商务印书馆 2017年版",
     "link": "https://www.cngwzj.com/pygushi/TangDai/23499/",
     "rows": [
-      {  
-        "s": [
-          {
-            "pinyi": ["xiāng", "jiāng", "qǔ"],
-            "text": "湘江曲",
-            "start1": 1.5,
-            "stop1": 999,
-            "start2": 1.5,
-            "stop2": 999
-          }
-        ]
+      {
+        "br": 1,
+        "pinyi": ["xiāng", "jiāng", "qǔ"],
+        "text": "湘江曲",
+        "one": [1.5, 999],
+        "two": [1.5, 999]
       },
       {
-        "s": [
-          {
-            "pinyi": ["", "táng", "", "zhāng", "jí"],
-            "text": "[唐]张籍",
-            "start1": 1.5,
-            "stop1": 20.5,
-            "start2": 5.3,
-            "stop2": 20.5
-          }
-        ]
+        "br": 1,
+        "pinyi": ["", "táng", "", "zhāng", "jí"],
+        "text": "[唐]张籍",
+        "one": [1.5, 20.5],
+        "two": [5.3, 20.5]
       },
       {
-        "s": [
-          {
-            "pinyi": ["xiāng", "shuǐ", "wú", "cháo", "qiū", "shuǐ", "kuò"],
-            "text": "湘水无潮秋水阔",
-            "start1": 5.3,
-            "stop1": 8.8,
-            "start2": 5.3,
-            "stop2": 13.2
-          },
-          {
-            "pinyi": ["xiāng", "zhōng", "yuè", "luò", "yuè", "rén", "fā"],
-            "text": "湘中月落行人发",
-            "start1": 8.8,
-            "stop1": 13.2,
-            "start2": 5.3,
-            "stop2": 13.2
-          }
-        ]
+        "br": 0,
+        "pinyi": ["xiāng", "shuǐ", "wú", "cháo", "qiū", "shuǐ", "kuò"],
+        "text": "湘水无潮秋水阔",
+        "one": [5.3, 8.8],
+        "two": [5.3, 13.2]
       },
       {
-        "s": [
-          {
-            "pinyi": ["sòng", "rén", "fā", "", "sòng", "rén", "guī"],
-            "text": "送人发，送人归",
-            "start1": 13.2,
-            "stop1": 16.4,
-            "start2": 13.2,
-            "stop2": 20.5
-          },
-          {
-            "pinyi": ["bái", "pín", "máng", "máng", "zhè", "gū", "fēi"],
-            "text": "白蘋茫茫鹧鸪飞",
-            "start1": 16.4,
-            "stop1": 20.5,
-            "start2": 13.2,
-            "stop2": 20.5
-          }
-        ]
+        "br": 1,
+        "pinyi": ["xiāng", "zhōng", "yuè", "luò", "yuè", "rén", "fā"],
+        "text": "湘中月落行人发",
+        "one": [8.8, 13.2],
+        "two": [5.3, 13.2]
+      },
+      {
+        "br": 0,
+        "pinyi": ["sòng", "rén", "fā", "", "sòng", "rén", "guī"],
+        "text": "送人发，送人归",
+        "one": [13.2, 16.4],
+        "two": [13.2, 20.5]
+      },
+      {
+        "br": 1,
+        "pinyi": ["bái", "pín", "máng", "máng", "zhè", "gū", "fēi"],
+        "text": "白蘋茫茫鹧鸪飞",
+        "one": [16.4, 20.5],
+        "two": [13.2, 20.5]
       }
     ]
   }

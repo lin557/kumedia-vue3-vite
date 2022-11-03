@@ -1,15 +1,17 @@
 <template>
-  <div v-loading="loading" class="media-list common-container">
-    <el-empty
-      v-if="listJson.rows.length === 0 && loading == false"
-      description="无数据"
-    />
-    <template v-for="item in listJson.rows" :key="item.id">
-      <div class="g-col">
-        <thumb-box :info="item" />
-      </div>
-    </template>
-  </div>
+  <el-scrollbar height="100%">
+    <div v-loading="loading" class="media-list common-container">
+      <el-empty
+        v-if="listJson.rows.length === 0 && loading == false"
+        description="无数据"
+      />
+      <template v-for="item in listJson.rows" :key="item.id">
+        <div class="g-col">
+          <thumb-box :info="item" />
+        </div>
+      </template>
+    </div>
+  </el-scrollbar>
 </template>
 <script lang="ts" setup>
 import { onMounted, ref, reactive } from 'vue'
@@ -51,6 +53,6 @@ onMounted(() => {
 
 <style lang="scss">
 .media-list {
-  padding-top: 15px;
+  padding: 10px 5px;
 }
 </style>

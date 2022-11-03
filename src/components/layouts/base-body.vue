@@ -1,13 +1,11 @@
 <template>
   <div class="base-body">
-    <el-scrollbar height="100%">
-      <!-- 路由匹配到的组件将渲染在这里 -->
-      <router-view v-slot="{ Component, route }">
-        <transition name="fade" mode="out-in">
-          <component :is="Component" :key="route.path" />
-        </transition>
-      </router-view>
-    </el-scrollbar>
+    <!-- 路由匹配到的组件将渲染在这里 -->
+    <router-view v-slot="{ Component, route }">
+      <transition name="fade" mode="out-in">
+        <component :is="Component" :key="route.path" />
+      </transition>
+    </router-view>
   </div>
 </template>
 
@@ -50,10 +48,6 @@ watch(
 <style lang="scss">
 .base-body {
   height: calc(100% - var(--km-narbar-height));
-  overflow-y: hidden;
-
-  .ep-scrollbar__bar.is-horizontal {
-    display: none;
-  }
+  overflow: hidden;
 }
 </style>

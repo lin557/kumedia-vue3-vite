@@ -1,20 +1,14 @@
 import axios from '~/utils/vue-http'
 
 export interface TangWork {
-  id: number
   title: string
   path: string
-  author?: string
-}
-
-export interface TangItem {
-  author: string
-  works: Array<TangWork>
+  writer?: string
 }
 
 export interface TangList {
   total: number
-  rows: Array<TangItem>
+  rows: Array<TangWork>
 }
 
 export interface TangSentence {
@@ -27,7 +21,11 @@ export interface TangSentence {
 }
 
 export interface TangRows {
-  s: Array<TangSentence>
+  pinyi: Array<string>
+  text: string
+  br: number
+  one: Array<number>
+  two: Array<number>
 }
 
 export interface TangJson {
@@ -38,11 +36,13 @@ export interface TangJson {
 }
 
 export const getTangList = () => {
-  const dt = new Date().getTime()
-  return axios.get<TangList>('mock/tang/list.json?t=' + dt)
+  // const dt = new Date().getTime()
+  // return axios.get<TangList>('mock/tang/list.json?t=' + dt)
+  return axios.get<TangList>('/api/tang')
 }
 
 export const getTangJson = (params: string) => {
-  const dt = new Date().getTime()
-  return axios.get<TangJson>('mock/tang/' + params + '.json?t=' + dt)
+  // const dt = new Date().getTime()
+  // return axios.get<TangJson>('mock/tang/' + params + '.json?t=' + dt)
+  return axios.get<TangJson>('/api/tang/' + params)
 }

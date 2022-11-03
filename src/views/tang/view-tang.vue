@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="tang-view">
     <tang-player ref="tangRef" />
   </div>
 </template>
@@ -42,9 +42,11 @@ onMounted(() => {
 })
 </script>
 <style lang="scss">
-.tsv-wrapper {
-  .ep-breadcrumb {
-    padding: 20px;
-  }
+.tang-view {
+  background-image: url('~/assets/tang-bk.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 10px 0;
 }
 </style>

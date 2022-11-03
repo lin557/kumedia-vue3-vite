@@ -77,24 +77,24 @@ class RequestHttp {
       (response: AxiosResponse) => {
         const { data, config } = response // 解构
         if (
-          data.code !== ERROR_NONE &&
-          data.code !== ERROR_CLIENT_LOGGIN_PASSWORD &&
-          data.code !== ERROR_SERVICE_DB_DUPLICATEKEY &&
-          data.code !== ERROR_CLIENT_USER_PASSWORD_VERIFICATION_FAILED
+          data.error_code !== ERROR_NONE &&
+          data.error_code !== ERROR_CLIENT_LOGGIN_PASSWORD &&
+          data.error_code !== ERROR_SERVICE_DB_DUPLICATEKEY &&
+          data.error_code !== ERROR_CLIENT_USER_PASSWORD_VERIFICATION_FAILED
         ) {
           // 此处也可以使用组件提示报错信息
           ElMessage.error({
-            message: data.msg || 'Error',
+            message: data.error_message || 'Error',
             type: 'error',
             duration: 5 * 1000
           })
         }
-        // if (data.code === RequestEnums.OVERDUE) {
+        // if (data.error_code === RequestEnums.OVERDUE) {
         //   // 登录信息失效，应跳转到登录页面，并清空本地的token
         //   localStorage.setItem('token', '') // router.replace({ // path: '/login' // })
         //   return Promise.reject(data)
         // } // 全局错误信息拦截（防止下载文件得时候返回数据流，没有code，直接报错）
-        // if (data.code && data.code !== RequestEnums.SUCCESS) {
+        // if (data.error_code && data.error_code !== RequestEnums.SUCCESS) {
         //   ElMessage.error(data) // 此处也可以使用组件提示报错信息
         //   return Promise.reject(data)
         // }

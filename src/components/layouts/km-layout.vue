@@ -3,10 +3,30 @@
   <base-body />
 </template>
 <script lang="ts" setup>
-import { watch } from 'vue'
+import { watch, onBeforeMount, onMounted } from 'vue'
 import { useRoute } from 'vue-router'
 import { toggleDark } from '../../composables/index'
 const route = useRoute()
+
+const doResize = () => {
+  const width = document.documentElement.clientWidth
+  const height = document.documentElement.clientHeight
+  document.documentElement.style.setProperty('--km-client-width', width + 'px')
+  document.documentElement.style.setProperty(
+    '--km-client-height',
+    height + 'px'
+  )
+}
+
+onBeforeMount(() => {
+  doResize()
+})
+
+onMounted(() => {
+  window.onresize = () => {
+    doResize()
+  }
+})
 
 watch(
   () => route,
@@ -28,3 +48,9 @@ watch(
   }
 )
 </script>
+<style lang="scss">
+:root {
+  --km-client-width: 1024px;
+  --km-client-height: 768px;
+}
+</style>

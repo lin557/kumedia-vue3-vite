@@ -1,40 +1,45 @@
 <template>
   <div class="thumb-box">
     <div class="thumb">
-      <router-link :to="thumbProps.info.path">
-        <img :src="thumbProps.info.thumb" />
+      <router-link :to="props.info.path">
+        <img :src="props.info.thumb" />
         <div class="thumb_bg"></div>
         <span class="thumb_rb">
-          <span> {{ thumbProps.info.status }} </span>
+          <span> {{ leftBottom }} </span>
         </span>
       </router-link>
     </div>
     <div class="info">
       <div class="title">
-        <router-link :to="thumbProps.info.path">
-          {{ thumbProps.info.title }}
+        <router-link :to="props.info.path">
+          {{ props.info.title }}
         </router-link>
       </div>
-      <div class="subtitle">{{ thumbProps.info.sub }}</div>
+      <div class="subtitle">{{ props.info.profile }}</div>
     </div>
   </div>
 </template>
 
 <script lang="ts" setup>
-const thumbProps = defineProps({
+import { computed } from 'vue'
+const props = defineProps({
   info: {
     type: Object,
     default: () => {
       return {
         id: '',
         title: '',
-        sub: '',
-        status: '',
+        profile: '',
+        rating: '',
         thumb: '',
         path: ''
       }
     }
   }
+})
+
+const leftBottom = computed(() => {
+  return props.info.rating.toFixed(1)
 })
 </script>
 
@@ -82,8 +87,9 @@ const thumbProps = defineProps({
 
     .thumb_rb {
       position: absolute;
-      color: #fff;
-      font-size: 12px;
+      color: var(--ep-color-warning);
+      font-size: 20px;
+      font-weight: 600;
       z-index: 15;
       line-height: 28px;
       right: 8px;

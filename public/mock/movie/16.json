@@ -1,0 +1,16 @@
+{
+  "code": "00000",
+  "msg": "ok",
+  "result": {
+    "id": "16",
+    "title": "阿甘正传 Forrest Gump",
+    "performer": "汤姆·汉克斯 / 罗宾·怀特 / 加里·西尼斯 / 麦凯尔泰·威廉逊 / 莎莉·菲尔德",
+    "poster": "//192.168.0.250/media/movie/阿甘正传/poster.webp",
+    "episodes": [
+      {
+        "title": "双语中字",
+        "url": "//192.168.0.250/media/movie/阿甘正传/阿甘正传BD双语双字[电影天堂www.dy2018.com].mkv"
+      }
+    ]
+  }
+}

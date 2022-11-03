@@ -1,0 +1,16 @@
+{
+  "code": "00000",
+  "msg": "ok",
+  "result": {
+    "id": "10",
+    "title": "无间道 無間道",
+    "performer": "刘德华 / 梁朝伟 / 黄秋生 / 曾志伟 / 郑秀文",
+    "poster": "//192.168.0.250/media/movie/无间道/poster1.webp",
+    "episodes": [
+      {
+        "title": "国语",
+        "url": "//192.168.0.250/media/movie/无间道/[www.domp4.cc]无间道.2002.BD1080p.国粤双语中字.mp4"
+      }
+    ]
+  }
+}

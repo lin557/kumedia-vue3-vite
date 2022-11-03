@@ -1,0 +1,16 @@
+{
+  "code": "00000",
+  "msg": "ok",
+  "result": {
+    "id": "13",
+    "title": "史密斯夫妇 Mr. & Mrs. Smith",
+    "performer": "布拉德·皮特 / 安吉丽娜·朱莉 / 文斯·沃恩 / 亚当·布罗迪 / 凯丽·华盛顿",
+    "poster": "//192.168.0.250/media/movie/史密斯夫妇/poster.webp",
+    "episodes": [
+      {
+        "title": "双语中字",
+        "url": "//192.168.0.250/media/movie/史密斯夫妇/[www.domp4.cc]史密斯夫妇.2005.BD1080p.国英双语中字.mp4"
+      }
+    ]
+  }
+}

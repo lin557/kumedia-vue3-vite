@@ -83,6 +83,16 @@
         "age": 2019,
         "cover": "//192.168.0.250/media/teleplay/长安十二时辰/cover.jpg",
         "thumb": "//192.168.0.250/media/teleplay/长安十二时辰/thumb.jpg"
+      },
+      {
+        "id": 9,
+        "path": "/teleplay/9",
+        "title": "琉璃",
+        "sub": "初遇夫妇十世痴恋",
+        "status": "59集全",
+        "age": 2020,
+        "cover": "//192.168.0.250/media/teleplay/琉璃/cover.jpg",
+        "thumb": "//192.168.0.250/media/teleplay/琉璃/thumb.jpg"
       }
     ]
   }

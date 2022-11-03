@@ -1,12 +1,14 @@
 <template>
-  <div class="media-container common-container">
-    <div class="video-playbox">
-      <v3d-player
-        ref="playerRef"
-        :poster="listJson.poster"
-        @volumechange="handleVolumechange"
-      />
-      <div class="video-list">
+  <div v-loading="loading" class="media-container common-container">
+    <el-scrollbar height="100%">
+      <div class="player-box" v-if="!loading">
+        <v3d-player
+          ref="playerRef"
+          :poster="listJson.poster"
+          @volumechange="handleVolumechange"
+        />
+      </div>
+      <div class="player-side" v-if="!loading">
         <div class="video-title">{{ listJson.title }}</div>
         <div class="video-sub">{{ listJson.performer }}</div>
         <div class="video-ep">
@@ -26,7 +28,7 @@
           </el-scrollbar>
         </div>
       </div>
-    </div>
+    </el-scrollbar>
   </div>
 </template>
 
@@ -37,6 +39,7 @@ import { getTeleplayJson, MediaJson } from '~/api/media'
 import storage from '~/utils/storage'
 import V3dPlayer from 'v3d-player'
 import 'v3d-player/dist/style.css'
+import '~/styles/media.scss'
 
 let _listJson: MediaJson = {
   title: '',
@@ -50,6 +53,7 @@ let playInfo = reactive({
 })
 
 let activeIndex = ref('')
+let loading = ref(false)
 
 const getActiveClass = (index: number) => {
   const ep = getEpisode(index)
@@ -81,7 +85,8 @@ const play = (title: string, url: string) => {
   const opt = {
     src: url,
     autoplay: true,
-    volume: storage.getVolume()
+    volume: storage.getVolume(),
+    preventClickToggle: true
   }
   activeIndex.value = title
   playInfo.title = listJson.title + ' (' + title + ')'
@@ -110,92 +115,14 @@ onMounted(() => {
   } else {
     id = idParam[0]
   }
+  loading.value = true
   getJson(id).then(res => {
     listJson.title = res.result.title
     listJson.poster = res.result.poster
     listJson.performer = res.result.performer
     listJson.episodes.length = 0
     listJson.episodes.push(...res.result.episodes)
+    loading.value = false
   })
 })
 </script>
-<style lang="scss">
-.media-container {
-  .video-playbox {
-    box-sizing: border-box;
-    height: calc(100vh - 50px);
-
-    .v3d-player {
-      width: calc(100% - 336px);
-      height: 100%;
-      display: inline-block;
-    }
-
-    .video-list {
-      width: 336px;
-      height: 100%;
-      display: inline-block;
-      box-sizing: border-box;
-      vertical-align: top;
-      background-color: var(--ep-c--ep-color-primary-light-8);
-
-      .video-title {
-        padding: 10px;
-        height: 22px;
-        white-space: nowrap;
-        text-overflow: ellipsis;
-        overflow: hidden;
-        font-weight: 700;
-        line-height: 22px;
-        font-size: 16px;
-        color: var(--ep-color-warning);
-        text-align: center;
-      }
-
-      .video-sub {
-        padding: 0 15px 5px 15px;
-        height: 20px;
-        white-space: nowrap;
-        text-overflow: ellipsis;
-        overflow: hidden;
-        line-height: 22px;
-        font-size: 14px;
-        color: #999;
-      }
-
-      .video-ep {
-        padding: 10px;
-        height: calc(100% - 88px);
-
-        .video-ep-item {
-          display: inline-block;
-          width: 42px;
-          height: 32px;
-          text-align: center;
-          line-height: 32px;
-          font-size: 13px;
-          cursor: pointer;
-          border-radius: 3px;
-          box-sizing: border-box;
-          border: 1px solid transparent;
-          background-color: var(--ep-color-primary-light-9);
-          color: var(--ep-text-color-secondary);
-          margin: 5px;
-        }
-
-        .video-ep-item:hover {
-          border: 1px solid var(--ep-color-warning-dark-2);
-          background-color: var(--ep-color-primary-light-7);
-          color: var(--ep-color-warning);
-        }
-
-        .video-ep-active {
-          border: 1px solid var(--ep-color-warning-dark-2);
-          background-color: var(--ep-color-primary-light-8);
-          color: var(--ep-color-warning);
-        }
-      }
-    }
-  }
-}
-</style>

@@ -26,6 +26,7 @@ export interface MdeiaList {
   rows: Array<Project>
 }
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const getList = (type: string) => {
   const dt = new Date().getTime()
   return axios.get<MdeiaList>('mock/' + type + '/list.json?t=' + dt)
@@ -33,21 +34,19 @@ const getList = (type: string) => {
 
 export const getTeleplayList = () => {
   // 返回的数据格式可以和服务端约定
-  return getList('teleplay')
+  return axios.get<MdeiaList>('/api/teleplay')
 }
 
 export const getTeleplayJson = (params: string) => {
   // 返回的数据格式可以和服务端约定
-  const dt = new Date().getTime()
-  return axios.get<MediaJson>('mock/teleplay/' + params + '.json?t=' + dt)
+  return axios.get<MediaJson>('/api/teleplay/' + params)
 }
 
 export const getMovieList = () => {
-  return getList('movie')
+  return axios.get<MdeiaList>('/api/movie')
 }
 
 export const getMovieJson = (params: string) => {
   // 返回的数据格式可以和服务端约定
-  const dt = new Date().getTime()
-  return axios.get<MediaJson>('mock/movie/' + params + '.json?t=' + dt)
+  return axios.get<MediaJson>('/api/movie/' + params)
 }

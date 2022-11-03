@@ -1,0 +1,16 @@
+{
+  "code": "00000",
+  "msg": "ok",
+  "result": {
+    "id": "15",
+    "title": "赌神",
+    "performer": "周润发 / 刘德华 / 王祖贤 / 张敏 / 向华强",
+    "poster": "//192.168.0.250/media/movie/赌神/poster.webp",
+    "episodes": [
+      {
+        "title": "双语中字",
+        "url": "//192.168.0.250/media/movie/赌神/赌神.God.of.Gamblers.1989.BD720P.X264.AAC.Cantonese&Mandarin.CHS.Mp4Ba.mp4"
+      }
+    ]
+  }
+}

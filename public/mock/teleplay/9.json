@@ -1,0 +1,248 @@
+{
+  "code": "00000",
+  "msg": "ok",
+  "result": {
+    "id": "9",
+    "title": "琉璃",
+    "performer": "成毅 / 袁冰妍 / 刘学义 / 张予曦 / 白澍",
+    "poster": "//192.168.0.250/media/teleplay/琉璃/poster.webp",
+    "episodes": [
+      {
+        "title": "1",
+        "url": "//192.168.0.250/media/teleplay/琉璃/琉璃.2020.EP01.HD1080P.X264.AAC.Mandarin.CHS.BDE4.mp4"
+      },
+      {
+        "title": "2",
+        "url": "//192.168.0.250/media/teleplay/琉璃/琉璃.2020.EP02.HD1080P.X264.AAC.Mandarin.CHS.BDE4.mp4"
+      },
+      {
+        "title": "3",
+        "url": "//192.168.0.250/media/teleplay/琉璃/琉璃.2020.EP03.HD1080P.X264.AAC.Mandarin.CHS.BDE4.mp4"
+      },
+      {
+        "title": "4",
+        "url": "//192.168.0.250/media/teleplay/琉璃/琉璃.2020.EP04.HD1080P.X264.AAC.Mandarin.CHS.BDE4.mp4"
+      },
+      {
+        "title": "5",
+        "url": "//192.168.0.250/media/teleplay/琉璃/琉璃.2020.EP05.HD1080P.X264.AAC.Mandarin.CHS.BDE4.mp4"
+      },
+      {
+        "title": "6",
+        "url": "//192.168.0.250/media/teleplay/琉璃/琉璃.2020.EP06.HD1080P.X264.AAC.Mandarin.CHS.BDE4.mp4"
+      },
+      {
+        "title": "7",
+        "url": "//192.168.0.250/media/teleplay/琉璃/琉璃.2020.EP07.HD1080P.X264.AAC.Mandarin.CHS.BDE4.mp4"
+      },
+      {
+        "title": "8",
+        "url": "//192.168.0.250/media/teleplay/琉璃/琉璃.2020.EP08.HD1080P.X264.AAC.Mandarin.CHS.BDE4.mp4"
+      },
+      {
+        "title": "9",
+        "url": "//192.168.0.250/media/teleplay/琉璃/琉璃.2020.EP09.HD1080P.X264.AAC.Mandarin.CHS.BDE4.mp4"
+      },
+      {
+        "title": "10",
+        "url": "//192.168.0.250/media/teleplay/琉璃/琉璃.2020.EP10.HD1080P.X264.AAC.Mandarin.CHS.BDE4.mp4"
+      },
+      {
+        "title": "11",
+        "url": "//192.168.0.250/media/teleplay/琉璃/琉璃.2020.EP11.HD1080P.X264.AAC.Mandarin.CHS.BDE4.mp4"
+      },
+      {
+        "title": "12",
+        "url": "//192.168.0.250/media/teleplay/琉璃/琉璃.2020.EP12.HD1080P.X264.AAC.Mandarin.CHS.BDE4.mp4"
+      },
+      {
+        "title": "13",
+        "url": "//192.168.0.250/media/teleplay/琉璃/琉璃.2020.EP13.HD1080P.X264.AAC.Mandarin.CHS.BDE4.mp4"
+      },
+      {
+        "title": "14",
+        "url": "//192.168.0.250/media/teleplay/琉璃/琉璃.2020.EP14.HD1080P.X264.AAC.Mandarin.CHS.BDE4.mp4"
+      },
+      {
+        "title": "15",
+        "url": "//192.168.0.250/media/teleplay/琉璃/琉璃.2020.EP15.HD1080P.X264.AAC.Mandarin.CHS.BDE4.mp4"
+      },
+      {
+        "title": "16",
+        "url": "//192.168.0.250/media/teleplay/琉璃/琉璃.2020.EP16.HD1080P.X264.AAC.Mandarin.CHS.BDE4.mp4"
+      },
+      {
+        "title": "17",
+        "url": "//192.168.0.250/media/teleplay/琉璃/琉璃.2020.EP17.HD1080P.X264.AAC.Mandarin.CHS.BDE4.mp4"
+      },
+      {
+        "title": "18",
+        "url": "//192.168.0.250/media/teleplay/琉璃/琉璃.2020.EP18.HD1080P.X264.AAC.Mandarin.CHS.BDE4.mp4"
+      },
+      {
+        "title": "19",
+        "url": "//192.168.0.250/media/teleplay/琉璃/琉璃.2020.EP19.HD1080P.X264.AAC.Mandarin.CHS.BDE4.mp4"
+      },
+      {
+        "title": "20",
+        "url": "//192.168.0.250/media/teleplay/琉璃/琉璃.2020.EP20.HD1080P.X264.AAC.Mandarin.CHS.BDE4.mp4"
+      },
+      {
+        "title": "21",
+        "url": "//192.168.0.250/media/teleplay/琉璃/琉璃.2020.EP21.HD1080P.X264.AAC.Mandarin.CHS.BDE4.mp4"
+      },
+      {
+        "title": "22",
+        "url": "//192.168.0.250/media/teleplay/琉璃/琉璃.2020.EP22.HD1080P.X264.AAC.Mandarin.CHS.BDE4.mp4"
+      },
+      {
+        "title": "23",
+        "url": "//192.168.0.250/media/teleplay/琉璃/琉璃.2020.EP23.HD1080P.X264.AAC.Mandarin.CHS.BDE4.mp4"
+      },
+      {
+        "title": "24",
+        "url": "//192.168.0.250/media/teleplay/琉璃/琉璃.2020.EP24.HD1080P.X264.AAC.Mandarin.CHS.BDE4.mp4"
+      },
+      {
+        "title": "25",
+        "url": "//192.168.0.250/media/teleplay/琉璃/琉璃.2020.EP25.HD1080P.X264.AAC.Mandarin.CHS.BDE4.mp4"
+      },
+      {
+        "title": "26",
+        "url": "//192.168.0.250/media/teleplay/琉璃/琉璃.2020.EP26.HD1080P.X264.AAC.Mandarin.CHS.BDE4.mp4"
+      },
+      {
+        "title": "27",
+        "url": "//192.168.0.250/media/teleplay/琉璃/琉璃.2020.EP27.HD1080P.X264.AAC.Mandarin.CHS.BDE4.mp4"
+      },
+      {
+        "title": "28",
+        "url": "//192.168.0.250/media/teleplay/琉璃/琉璃.2020.EP28.HD1080P.X264.AAC.Mandarin.CHS.BDE4.mp4"
+      },
+      {
+        "title": "29",
+        "url": "//192.168.0.250/media/teleplay/琉璃/琉璃.2020.EP29.HD1080P.X264.AAC.Mandarin.CHS.BDE4.mp4"
+      },
+      {
+        "title": "30",
+        "url": "//192.168.0.250/media/teleplay/琉璃/琉璃.2020.EP30.HD1080P.X264.AAC.Mandarin.CHS.BDE4.mp4"
+      },
+      {
+        "title": "31",
+        "url": "//192.168.0.250/media/teleplay/琉璃/琉璃.2020.EP31.HD1080P.X264.AAC.Mandarin.CHS.BDE4.mp4"
+      },
+      {
+        "title": "32",
+        "url": "//192.168.0.250/media/teleplay/琉璃/琉璃.2020.EP32.HD1080P.X264.AAC.Mandarin.CHS.BDE4.mp4"
+      },
+      {
+        "title": "33",
+        "url": "//192.168.0.250/media/teleplay/琉璃/琉璃.2020.EP33.HD1080P.X264.AAC.Mandarin.CHS.BDE4.mp4"
+      },
+      {
+        "title": "34",
+        "url": "//192.168.0.250/media/teleplay/琉璃/琉璃.2020.EP34.HD1080P.X264.AAC.Mandarin.CHS.BDE4.mp4"
+      },
+      {
+        "title": "35",
+        "url": "//192.168.0.250/media/teleplay/琉璃/琉璃.2020.EP35.HD1080P.X264.AAC.Mandarin.CHS.BDE4.mp4"
+      },
+      {
+        "title": "36",
+        "url": "//192.168.0.250/media/teleplay/琉璃/琉璃.2020.EP36.HD1080P.X264.AAC.Mandarin.CHS.BDE4.mp4"
+      },
+      {
+        "title": "37",
+        "url": "//192.168.0.250/media/teleplay/琉璃/琉璃.2020.EP37.HD1080P.X264.AAC.Mandarin.CHS.BDE4.mp4"
+      },
+      {
+        "title": "38",
+        "url": "//192.168.0.250/media/teleplay/琉璃/琉璃.2020.EP38.HD1080P.X264.AAC.Mandarin.CHS.BDE4.mp4"
+      },
+      {
+        "title": "39",
+        "url": "//192.168.0.250/media/teleplay/琉璃/琉璃.2020.EP39.HD1080P.X264.AAC.Mandarin.CHS.BDE4.mp4"
+      },
+      {
+        "title": "40",
+        "url": "//192.168.0.250/media/teleplay/琉璃/琉璃.2020.EP40.HD1080P.X264.AAC.Mandarin.CHS.BDE4.mp4"
+      },
+      {
+        "title": "41",
+        "url": "//192.168.0.250/media/teleplay/琉璃/琉璃.2020.EP41.HD1080P.X264.AAC.Mandarin.CHS.BDE4.mp4"
+      },
+      {
+        "title": "42",
+        "url": "//192.168.0.250/media/teleplay/琉璃/琉璃.2020.EP42.HD1080P.X264.AAC.Mandarin.CHS.BDE4.mp4"
+      },
+      {
+        "title": "43",
+        "url": "//192.168.0.250/media/teleplay/琉璃/琉璃.2020.EP43.HD1080P.X264.AAC.Mandarin.CHS.BDE4.mp4"
+      },
+      {
+        "title": "44",
+        "url": "//192.168.0.250/media/teleplay/琉璃/琉璃.2020.EP44.HD1080P.X264.AAC.Mandarin.CHS.BDE4.mp4"
+      },
+      {
+        "title": "45",
+        "url": "//192.168.0.250/media/teleplay/琉璃/琉璃.2020.EP45.HD1080P.X264.AAC.Mandarin.CHS.BDE4.mp4"
+      },
+      {
+        "title": "46",
+        "url": "//192.168.0.250/media/teleplay/琉璃/琉璃.2020.EP46.HD1080P.X264.AAC.Mandarin.CHS.BDE4.mp4"
+      },
+      {
+        "title": "47",
+        "url": "//192.168.0.250/media/teleplay/琉璃/琉璃.2020.EP47.HD1080P.X264.AAC.Mandarin.CHS.BDE4.mp4"
+      },
+      {
+        "title": "48",
+        "url": "//192.168.0.250/media/teleplay/琉璃/琉璃.2020.EP48.HD1080P.X264.AAC.Mandarin.CHS.BDE4.mp4"
+      },
+      {
+        "title": "49",
+        "url": "//192.168.0.250/media/teleplay/琉璃/琉璃.2020.EP49.HD1080P.X264.AAC.Mandarin.CHS.BDE4.mp4"
+      },
+      {
+        "title": "50",
+        "url": "//192.168.0.250/media/teleplay/琉璃/琉璃.2020.EP50.HD1080P.X264.AAC.Mandarin.CHS.BDE4.mp4"
+      },
+      {
+        "title": "51",
+        "url": "//192.168.0.250/media/teleplay/琉璃/琉璃.2020.EP51.HD1080P.X264.AAC.Mandarin.CHS.BDE4.mp4"
+      },
+      {
+        "title": "52",
+        "url": "//192.168.0.250/media/teleplay/琉璃/琉璃.2020.EP52.HD1080P.X264.AAC.Mandarin.CHS.BDE4.mp4"
+      },
+      {
+        "title": "53",
+        "url": "//192.168.0.250/media/teleplay/琉璃/琉璃.2020.EP53.HD1080P.X264.AAC.Mandarin.CHS.BDE4.mp4"
+      },
+      {
+        "title": "54",
+        "url": "//192.168.0.250/media/teleplay/琉璃/琉璃.2020.EP54.HD1080P.X264.AAC.Mandarin.CHS.BDE4.mp4"
+      },
+      {
+        "title": "55",
+        "url": "//192.168.0.250/media/teleplay/琉璃/琉璃.2020.EP55.HD1080P.X264.AAC.Mandarin.CHS.BDE4.mp4"
+      },
+      {
+        "title": "56",
+        "url": "//192.168.0.250/media/teleplay/琉璃/琉璃.2020.EP56.HD1080P.X264.AAC.Mandarin.CHS.BDE4.mp4"
+      },
+      {
+        "title": "57",
+        "url": "//192.168.0.250/media/teleplay/琉璃/琉璃.2020.EP57.HD1080P.X264.AAC.Mandarin.CHS.BDE4.mp4"
+      },
+      {
+        "title": "58",
+        "url": "//192.168.0.250/media/teleplay/琉璃/琉璃.2020.EP58.HD1080P.X264.AAC.Mandarin.CHS.BDE4.mp4"
+      },
+      {
+        "title": "56",
+        "url": "//192.168.0.250/media/teleplay/琉璃/琉璃.2020.EP59.HD1080P.X264.AAC.Mandarin.CHS.BDE4.mp4"
+      }
+    ]
+  }
+}

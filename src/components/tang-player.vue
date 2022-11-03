@@ -2,27 +2,24 @@
 <template>
   <div class="tang-player">
     <el-tabs type="card" v-model="activeName" @tab-click="handleClick">
-      <el-tab-pane label="原文" name="first">
-        <template v-for="row in dataTang.rows" :key="row.title">
-          <template v-for="(s, index) in row" :key="index">
-            <div class="tang-row">
-              <template v-for="(si, index1) in s" :key="index1">
-                <div
-                  class="tang-col"
-                  @click="handleAudio(si.start1, si.stop1)"
-                  @dblclick="handleAudio(si.start2, si.stop2)"
-                >
-                  <template v-for="(item, index2) in si.text" :key="index2">
-                    <ruby>
-                      <rt>{{ si.pinyi[index2] }}</rt>
-                      {{ item }}
-                    </ruby>
-                  </template>
-                </div>
+      <el-tab-pane label="诗文" name="first">
+        <div class="tang-text">
+          <template v-for="item in dataTang.rows" :key="item.title">
+            <div
+              class="tang-col"
+              @click="handleAudio(item.one)"
+              @dblclick="handleAudio(item.two)"
+            >
+              <template v-for="(str, index) in item.text" :key="index">
+                <ruby>
+                  <rt>{{ item.pinyi[index] }}</rt>
+                  {{ str }}
+                </ruby>
               </template>
             </div>
+            <div v-if="item.br == 1" class="tang-clear"></div>
           </template>
-        </template>
+        </div>
 
         <div class="tang-audio">
           <audio
@@ -37,7 +34,6 @@
           ></audio>
         </div>
       </el-tab-pane>
-      <el-tab-pane label="译文" name="second">无</el-tab-pane>
       <el-tab-pane label="视频" name="third" v-if="hasVideo">
         <div class="tang-video">
           <v3d-player ref="playerRef" />
@@ -73,7 +69,7 @@ let dataTang = reactive(_dataJson)
 let _options = {
   autoplay: true,
   muted: false,
-  screenshot: true,
+  screenshot: false,
   preventClickToggle: true,
   theme: '#ff3366',
   volume: 0.7,
@@ -110,10 +106,6 @@ const handleClick = (tab: TabsPaneContext) => {
       break
     case '1':
       closeAudio()
-      closeVideo()
-      break
-    case '2':
-      closeAudio()
       if (dataTang.video) {
         playerRef.value?.play(options)
       }
@@ -132,12 +124,12 @@ const play = (data: TangJson) => {
   }
 }
 
-const handleAudio = (start: number, stop: number) => {
+const handleAudio = (times: Array<number>) => {
   if (audioRef.value) {
-    audioRef.value.currentTime = start
+    audioRef.value.currentTime = times[0]
     audioRef.value.play()
   }
-  stopTime = stop
+  stopTime = times[1]
 }
 
 const handleTimeUpdate = () => {
@@ -164,8 +156,8 @@ defineExpose({
 .tang-player {
   text-align: center;
 
-  .tang-row {
-    margin: 3px 0;
+  .tang-text {
+    color: var(--ep-text-color-regular);
     .tang-col {
       display: inline-block;
       margin: 3px 8px;
@@ -193,6 +185,10 @@ defineExpose({
     .tang-col:hover {
       color: var(--ep-color-warning);
     }
+    .tang-clear {
+      width: 100%;
+      height: 3px;
+    }
   }
 
   .tang-audio {
@@ -214,7 +210,6 @@ defineExpose({
   .ep-tabs {
     .ep-tabs__header {
       border-bottom: none;
-      margin-top: 10px;
       margin-bottom: 0px;
 
       .ep-tabs__nav {

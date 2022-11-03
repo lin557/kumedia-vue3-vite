@@ -32,7 +32,20 @@ export default defineConfig(({ command, mode }) => {
     },
     server: {
       // 让本地ip可以访问
-      host: '0.0.0.0'
+      host: '0.0.0.0',
+      // 使用 proxy 实例
+      proxy: {
+        '/api': {
+          target: 'http://192.168.0.250:8088/',
+          changeOrigin: true
+          // rewrite: path => path.replace(/^\/api/, '')
+        },
+        '/media': {
+          target: 'http://192.168.0.250/',
+          changeOrigin: true
+          // rewrite: path => path.replace(/^\/api/, '')
+        }
+      }
     },
     // 打包后可以直接打开
     base: env.VITE_MODE === 'production' ? './' : './',

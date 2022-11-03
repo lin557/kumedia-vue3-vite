@@ -1,0 +1,16 @@
+{
+  "code": "00000",
+  "msg": "ok",
+  "result": {
+    "id": "12",
+    "title": "无间道3：终极无间",
+    "performer": "梁朝伟 / 刘德华 / 黎明 / 陈道明 / 陈慧琳",
+    "poster": "//192.168.0.250/media/movie/无间道/poster3.webp",
+    "episodes": [
+      {
+        "title": "国语",
+        "url": "//192.168.0.250/media/movie/无间道/[www.domp4.cc]无间道3.2003.BD1080p.国粤双语中字.mp4"
+      }
+    ]
+  }
+}

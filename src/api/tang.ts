@@ -1,6 +1,7 @@
 import axios from '~/utils/vue-http'
 
 export interface TangWork {
+  tang_id: string
   title: string
   path: string
   writer?: string
@@ -28,7 +29,14 @@ export interface TangRows {
   two: Array<number>
 }
 
+export interface TangNear {
+  path: string
+  title: string
+}
+
 export interface TangJson {
+  prev?: TangNear | undefined
+  next?: TangNear | undefined
   title: string
   audio?: string | undefined
   video?: string | undefined

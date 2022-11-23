@@ -1,5 +1,5 @@
 <template>
-  <div v-loading="loading" class="media-container common-container">
+  <div v-loading="loading" class="media-player common-container">
     <el-scrollbar height="100%">
       <div class="player-box" v-if="!loading">
         <v3d-player

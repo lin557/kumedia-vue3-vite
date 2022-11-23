@@ -1,12 +1,22 @@
 <template>
-  <base-header />
-  <base-body />
+  <div class="km-layout" :class="appCls">
+    <base-header />
+    <base-body />
+  </div>
 </template>
 <script lang="ts" setup>
-import { watch, onBeforeMount, onMounted } from 'vue'
+import { ref, watch, onBeforeMount, onMounted, computed } from 'vue'
 import { useRoute } from 'vue-router'
 import { toggleDark } from '../../composables/index'
 const route = useRoute()
+
+let isTangPage = ref(false)
+const appCls = computed(() => {
+  if (isTangPage.value) {
+    return 'km-page-tang'
+  }
+  return ''
+})
 
 const doResize = () => {
   const width = document.documentElement.clientWidth
@@ -33,9 +43,11 @@ watch(
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   (val, preVal) => {
     if (route.path.indexOf('/tang') >= 0) {
-      toggleDark(false)
+      toggleDark(true)
+      isTangPage.value = true
     } else {
       toggleDark(true)
+      isTangPage.value = false
     }
   },
   {
@@ -52,5 +64,19 @@ watch(
 :root {
   --km-client-width: 1024px;
   --km-client-height: 768px;
+}
+.km-layout {
+  height: 100%;
+}
+
+.km-page-tang {
+  // background-image: url(/src/assets/tang-bk.jpg);
+  // background-repeat: no-repeat;
+  // background-size: cover;
+  // background-position: top;
+
+  .ep-card {
+    background-color: transparent;
+  }
 }
 </style>

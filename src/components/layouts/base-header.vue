@@ -53,8 +53,9 @@ const data = reactive({
   display: flex;
   font-size: 14px;
   box-sizing: border-box;
-  border-bottom: var(--ep-border);
-  box-shadow: var(--ep-box-shadow-light);
+  // border-bottom: var(--ep-border);
+  // box-shadow: var(--ep-box-shadow-light);
+  margin: 0 auto;
 
   .navbar-item {
     display: inline-flex;

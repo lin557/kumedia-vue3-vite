@@ -14,6 +14,7 @@ import {
 import eslintPlugin from 'vite-plugin-eslint'
 
 // https://vitejs.dev/config/
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 export default defineConfig(({ command, mode }) => {
   const pathSrc = path.resolve(__dirname, 'src')
   const env = loadEnv(mode, __dirname)
@@ -36,7 +37,7 @@ export default defineConfig(({ command, mode }) => {
       // 使用 proxy 实例
       proxy: {
         '/api': {
-          target: 'http://192.168.0.250:8088/',
+          target: 'http://192.168.0.250:10080/',
           changeOrigin: true
           // rewrite: path => path.replace(/^\/api/, '')
         },

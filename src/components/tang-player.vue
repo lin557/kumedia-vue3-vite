@@ -21,8 +21,34 @@
           </template>
         </div>
 
-        <div class="tang-audio">
+        <div class="tang-audio" v-if="aduioVis">
+          <el-button plain @click="handlePlay" :class="playActive">
+            <el-icon style="vertical-align: middle" :class="playCls">
+              <VideoPause v-if="self.playing === 2 && !self.loop" />
+              <VideoPlay v-else />
+            </el-icon>
+            <span style="vertical-align: middle">
+              {{ playText }}
+            </span>
+          </el-button>
+          <el-button plain @click="handleLoop" :class="loopActive">
+            <el-icon style="vertical-align: middle" :class="loopCls">
+              <VideoPause v-if="self.playing === 2 && self.loop" />
+              <Refresh v-else />
+            </el-icon>
+            <span style="vertical-align: middle">
+              {{ loopText }}
+            </span>
+          </el-button>
+          <el-button plain @click="closeAudio">
+            <el-icon style="vertical-align: middle">
+              <CircleClose />
+            </el-icon>
+            <span style="vertical-align: middle">停止</span>
+          </el-button>
+
           <audio
+            style="display: none"
             ref="audioRef"
             controls
             height="100"
@@ -30,7 +56,8 @@
             preload="auto"
             :src="dataTang.audio"
             @timeupdate="handleTimeUpdate"
-            @pause="handlePause"
+            @playing="handlePlaying"
+            @loadeddata="handleLoadeddata"
           ></audio>
         </div>
       </el-tab-pane>
@@ -44,16 +71,21 @@
 </template>
 
 <script setup lang="ts">
-import { reactive, ref, computed } from 'vue'
+import { reactive, ref, computed, nextTick } from 'vue'
 import V3dPlayer from 'v3d-player'
 import 'v3d-player/dist/style.css'
 import { TangJson } from '~/api/tang'
 import type { TabsPaneContext } from 'element-plus'
+import {
+  VideoPlay,
+  CircleClose,
+  VideoPause,
+  Refresh
+} from '@element-plus/icons-vue'
 
 const audioRef = ref<HTMLAudioElement>()
 const playerRef = ref<InstanceType<typeof V3dPlayer>>()
 const MAX_DURATION = 999.9
-let stopTime = MAX_DURATION
 
 const activeName = ref('first')
 
@@ -78,6 +110,17 @@ let _options = {
 
 let options = reactive(_options)
 
+let self = reactive({
+  audio: false,
+  loop: false,
+  playing: 0,
+  stopTime: MAX_DURATION
+})
+
+const aduioVis = computed(() => {
+  return self.audio
+})
+
 const hasVideo = computed(() => {
   if (options.src === '' || options.src === undefined || options.src === null) {
     return false
@@ -86,19 +129,93 @@ const hasVideo = computed(() => {
   }
 })
 
+const playActive = computed(() => {
+  if (self.playing > 0 && !self.loop) {
+    return 'tang-playing'
+  } else {
+    return ''
+  }
+})
+
+const playCls = computed(() => {
+  if (self.playing === 1 && !self.loop) {
+    return 'is-loading'
+  } else {
+    return ''
+  }
+})
+
+const playText = computed(() => {
+  let ret = '播放'
+  if (!self.loop) {
+    switch (self.playing) {
+      case 1:
+        ret = '播放中'
+        break
+      case 2:
+        ret = '暂停中'
+        break
+    }
+  }
+  return ret
+})
+
+const loopActive = computed(() => {
+  if (self.playing > 0 && self.loop) {
+    return 'tang-playing'
+  } else {
+    return ''
+  }
+})
+
+const loopCls = computed(() => {
+  if (self.playing === 1 && self.loop) {
+    return 'is-loading'
+  } else {
+    return ''
+  }
+})
+
+const loopText = computed(() => {
+  let ret = '循环'
+  if (self.loop) {
+    switch (self.playing) {
+      case 1:
+        ret = '循环中'
+        break
+      case 2:
+        ret = '暂停中'
+        break
+    }
+  }
+  return ret
+})
+
+/**
+ * 关音频
+ */
 const closeAudio = () => {
   if (audioRef.value) {
     audioRef.value.pause()
     audioRef.value.currentTime = 0
+    self.loop = false
+    self.playing = 0
   }
 }
 
+/**
+ * 关视频
+ */
 const closeVideo = () => {
   if (dataTang.video) {
     playerRef.value?.close()
   }
 }
 
+/**
+ * Tabs表头事件
+ * @param tab TabsPaneContext
+ */
 const handleClick = (tab: TabsPaneContext) => {
   switch (tab.index) {
     case '0':
@@ -114,6 +231,7 @@ const handleClick = (tab: TabsPaneContext) => {
 }
 
 const play = (data: TangJson) => {
+  self.audio = false
   dataTang.audio = data.audio
   dataTang.title = data.title
   dataTang.video = data.video
@@ -122,29 +240,109 @@ const play = (data: TangJson) => {
   if (dataTang.video) {
     options.src = dataTang.video
   }
+
+  nextTick(() => {
+    self.audio = true
+    // setTimeout(() => {
+    //   self.audio = true
+    // }, 250)
+  })
 }
 
-const handleAudio = (times: Array<number>) => {
+const playAudio = (times: Array<number>) => {
   if (audioRef.value) {
+    // audioRef.value.pause()
     audioRef.value.currentTime = times[0]
     audioRef.value.play()
   }
-  stopTime = times[1]
+  self.stopTime = times[1]
+}
+
+const handleAudio = (times: Array<number>) => {
+  self.loop = false
+  playAudio(times)
 }
 
 const handleTimeUpdate = () => {
   if (audioRef.value && audioRef.value.currentTime) {
     console.log(audioRef.value.currentTime)
-    if (audioRef.value.currentTime >= stopTime) {
-      audioRef.value.pause()
-      audioRef.value.currentTime = 0
-      stopTime = MAX_DURATION
+    if (audioRef.value.currentTime >= self.stopTime) {
+      if (self.loop) {
+        // 不停
+        audioRef.value.currentTime = 0
+      } else {
+        audioRef.value.pause()
+        audioRef.value.currentTime = 0
+        self.stopTime = MAX_DURATION
+        self.playing = 0
+      }
     }
   }
 }
 
-const handlePause = () => {
-  stopTime = MAX_DURATION
+const handlePlay = () => {
+  if (dataTang.rows.length === 0) {
+    return
+  }
+  if (!audioRef.value) {
+    return
+  }
+  if (self.loop) {
+    closeAudio()
+  }
+  switch (self.playing) {
+    case 0:
+      // 没播放
+      handleAudio(dataTang.rows[0].one)
+      break
+    case 1:
+      // 播放中
+      audioRef.value.pause()
+      // 暂停
+      self.playing = 2
+      break
+    case 2:
+      audioRef.value.play()
+      break
+  }
+}
+
+const handlePlaying = () => {
+  self.playing = 1
+}
+
+const handleLoop = () => {
+  if (dataTang.rows.length === 0) {
+    return
+  }
+  if (!audioRef.value) {
+    return
+  }
+  if (self.playing > 0 && !self.loop) {
+    // 在播放别的
+    closeAudio()
+  }
+
+  switch (self.playing) {
+    case 0:
+      // 没播
+      self.loop = true
+      playAudio(dataTang.rows[1].one)
+      break
+    case 1:
+      // 播放中
+      audioRef.value.pause()
+      // 暂停
+      self.playing = 2
+      break
+    case 2:
+      audioRef.value.play()
+      break
+  }
+}
+
+const handleLoadeddata = () => {
+  self.audio = true
 }
 
 defineExpose({
@@ -158,6 +356,7 @@ defineExpose({
 
   .tang-text {
     color: var(--ep-text-color-regular);
+    min-height: 228px;
     .tang-col {
       display: inline-block;
       margin: 3px 8px;
@@ -192,10 +391,22 @@ defineExpose({
   }
 
   .tang-audio {
-    position: fixed;
-    bottom: 5px;
+    // position: fixed;
+    // bottom: 10px;
     text-align: center;
     width: 100%;
+    margin-top: 20px;
+
+    .ep-button {
+      width: 100px;
+    }
+
+    .tang-playing {
+      color: var(--ep-button-active-text-color);
+      border-color: var(--ep-button-active-border-color);
+      background-color: var(--ep-button-active-bg-color);
+      outline: none;
+    }
   }
 
   .tang-video {

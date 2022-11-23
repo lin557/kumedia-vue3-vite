@@ -1,6 +1,6 @@
 <template>
   <el-scrollbar height="100%">
-    <div v-loading="loading" class="media-list common-container">
+    <div v-loading="loading" class="media-container common-container">
       <el-empty
         v-if="listJson.rows.length === 0 && loading == false"
         description="无数据"
@@ -10,6 +10,8 @@
           <thumb-box :info="item" />
         </div>
       </template>
+
+      <div class="movie-bottom">我是有底线的</div>
     </div>
   </el-scrollbar>
 </template>
@@ -50,9 +52,3 @@ onMounted(() => {
     })
 })
 </script>
-
-<style lang="scss">
-.media-list {
-  padding: 10px 5px;
-}
-</style>

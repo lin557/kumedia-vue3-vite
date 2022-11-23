@@ -1,4 +1,4 @@
-.media-container {
+.media-player {
   height: 100%;
 
   .player-box {
@@ -77,3 +77,158 @@
     }
   }
 }
+
+// @media screen and (max-width:559px) {
+// 	.navbar .navbar-wrapper .ep-menu--horizontal,
+//   .base-body .km-breadcrumb {
+// 	  width: 100%;
+//   }
+
+//   .media-container {
+//     .player-box {
+//       width: 100% !important;
+//       height: calc(var(--km-client-width) * 0.56) !important;
+//     }
+
+//     .player-side {
+//       width: 100% !important;
+//       min-height: 336px;
+//       height: calc(var(--km-client-height) - var(--km-client-width) * 0.5625 - 50px) !important;
+//       position: relative !important;
+//       .video-ep {
+//         .video-ep-item {
+//           width: calc(20% - 10px) !important;
+//         }
+//       }
+//     }
+//   }
+
+//   .movie-container {
+//     .video-playbox {
+//       height: 320px !important;
+//       .v3d-player {
+//         width: 100% !important;
+//       }
+//       .video-playing {
+//         top: 320px !important;
+//       }
+//     }
+//   }
+
+//   .tang-container {
+//     .tang-item {
+//       width: calc(100% - 10px);
+//     }
+//   }
+// }
+
+// @media screen and (max-width:820px) and (min-width:560px) {
+//   .media-container {
+//     .player-box {
+//       width: 100% !important;
+//       height: calc(var(--km-client-width) * 0.5625) !important;
+//     }
+
+//     .player-side {
+//       width: 100% !important;
+//       min-height: 336px;
+//       height: calc(var(--km-client-height) - var(--km-client-width) * 0.5625 - 60px) !important;
+//       position: relative !important;
+//       .video-ep {
+//         .video-ep-item {
+//           width: calc(12.5% - 10px) !important;
+//         }
+//       }
+//     }
+//   }
+
+//   .movie-container {
+//     .video-playbox {
+//       height: 320px !important;
+//       .v3d-player {
+//         width: 100% !important;
+//       }
+//       .video-playing {
+//         top: 320px !important;
+//       }
+//     }
+//   }
+
+//   .tang-container {
+//     .tang-item {
+//       width: calc(50% - 10px);
+//     }
+//   }
+// }
+
+// @media screen and (max-width:1079px) and (min-width:821px) {
+//   .media-wrapper {
+//     > .ep-scrollbar__bar {
+//       display: none !important;
+//     }
+//   }
+
+
+//   .tang-container {
+//     .tang-item {
+//       width: calc(33.33% - 10px);
+//     }
+//   }
+// }
+
+// @media screen and (max-width:1339px) and (min-width:1080px) {
+//   .tang-container {
+//     .tang-item {
+//       width: calc(25% - 10px);
+//     }
+//   }
+//   .media-wrapper {
+//     > .ep-scrollbar__bar {
+//       display: none !important;
+//     }
+//   }
+// }
+
+// @media screen and (max-width:1599px) and (min-width:1340px) {
+//   .tang-container {
+//     .tang-item {
+//       width: calc(20% - 10px);
+//     }
+//   }
+//   .media-wrapper {
+//     > .ep-scrollbar__bar {
+//       display: none !important;
+//     }
+//   }
+// }
+
+// @media screen and (min-width:1600px) {
+//   .tang-container {
+//     .tang-item {
+//       width: calc(16.66% - 10px);
+//     }
+//   }
+//   .media-wrapper {
+//     > .ep-scrollbar__bar {
+//       display: none !important;
+//     }
+//   }
+// }
+
+// @media screen and (min-width: 800px) and (max-width: 1593) {
+//   .media-container {
+//     max-width: 1542px;
+//   }
+// }
+
+// @media screen and (min-width: 1592px) and (max-width: 1789px) {
+//   .media-container {
+//     max-width: 1542px;
+//   }
+// }
+
+// @media screen and (min-width: 1800px) {
+//   .media-container {
+//     max-width: 1542px;
+//   }
+// }

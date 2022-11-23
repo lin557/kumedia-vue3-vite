@@ -2,7 +2,7 @@
   <div class="thumb-box">
     <div class="thumb">
       <router-link :to="props.info.path">
-        <img :src="props.info.thumb" />
+        <el-image :src="props.info.thumb" fit="fill" lazy />
         <div class="thumb_bg"></div>
         <span class="thumb_rb">
           <span> {{ leftBottom }} </span>
@@ -63,12 +63,14 @@ const leftBottom = computed(() => {
       overflow: hidden;
       border-radius: 7px;
 
-      img {
+      .ep-image {
         display: block;
         width: 100%;
         height: 100%;
         overflow: hidden;
-        transition: all 0.25s ease-in-out;
+        img {
+          transition: all 0.25s ease-in-out;
+        }
       }
     }
 
@@ -114,7 +116,6 @@ const leftBottom = computed(() => {
         white-space: nowrap;
         text-overflow: ellipsis;
         overflow: hidden;
-        font-weight: 700;
         line-height: 22px;
         font-size: 16px;
       }
@@ -134,8 +135,19 @@ const leftBottom = computed(() => {
 .thumb-box:hover {
   .thumb {
     // box-shadow: 0 2px 6px 0 rgb(0 0 0 / 40%);
-    a img {
-      transform: scale(1.05);
+    a {
+      .ep-image {
+        img {
+          transform: scale(1.05);
+        }
+      }
+    }
+  }
+  .info {
+    .title {
+      a {
+        color: var(--ep-color-warning);
+      }
     }
   }
 }

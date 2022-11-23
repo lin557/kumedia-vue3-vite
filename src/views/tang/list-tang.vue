@@ -1,25 +1,16 @@
 <template>
   <div v-loading="loading" class="tang-container common-container">
     <el-scrollbar height="100%">
-      <el-row>
-        <el-card shadow="never">
-          <template #header>
-            <div>
-              <span>唐诗三百首</span>
-            </div>
-          </template>
-          <div
-            v-for="(item, index) in listJson.rows"
-            :key="item.title"
-            class="tang-item"
-            @click="handleClick(item)"
-          >
-            <span class="tang-index">{{ index + 1 }}.</span>
-            <span class="tang-title">{{ item.title }}</span>
-            <span class="tang-author">{{ item.writer }}</span>
-          </div>
-        </el-card>
-      </el-row>
+      <div
+        v-for="(item, index) in listJson.rows"
+        :key="index"
+        class="tang-item"
+        @click="handleClick(item)"
+      >
+        <span class="tang-index">{{ item.tang_id }}.</span>
+        <span class="tang-title" :title="item.title">{{ item.title }}</span>
+        <span class="tang-author">{{ item.writer }}</span>
+      </div>
     </el-scrollbar>
   </div>
 </template>
@@ -75,7 +66,7 @@ const handleClick = (work: TangWork) => {
 }
 
 onMounted(() => {
-  loading.value = false
+  loading.value = true
   getJson()
     .then(res => {
       listJson.total = res.result.total
@@ -97,20 +88,10 @@ onMounted(() => {
 <style lang="scss">
 .tang-container {
   height: 100%;
-  padding: 10px 0;
-
-  .ep-card {
-    margin-bottom: 10px;
-    margin-left: 8px;
-    margin-right: 8px;
-    width: 100%;
-    .ep-card__body {
-      padding: 10px;
-      font-size: 14px;
-    }
-  }
+  padding: 12px 0;
 
   .tang-item {
+    font-size: 14px;
     margin: 5px;
     padding: 7px 5px;
     box-sizing: border-box;
@@ -118,7 +99,7 @@ onMounted(() => {
     display: inline-block;
     border: var(--ep-border);
     border-radius: 5px;
-    color: var(--ep-text-color-regular);
+    // color: var(--ep-text-color-regular);
     cursor: pointer;
 
     span {
@@ -127,7 +108,7 @@ onMounted(() => {
     }
 
     .tang-index {
-      width: 30px;
+      width: 28px;
       text-align: right;
       padding-right: 3px;
     }
@@ -147,7 +128,7 @@ onMounted(() => {
 
   .tang-item:hover {
     color: var(--ep-color-warning);
-    background-color: var(--ep-color-warning-light-9);
+    border-color: var(--ep-color-warning);
   }
 }
 </style>
